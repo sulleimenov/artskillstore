@@ -1,0 +1,71 @@
+.catalog-title
+	font-size: 12px
+	font-weight: 300
+	color: $textcolor
+	margin: 32px 0
+
+.catalog-list
+	display: flex
+	flex-wrap: wrap
+	@include media-breakpoint-down(md)
+	margin-bottom: 32px
+	&__item
+		width: 100%
+		border-bottom: 1px solid #C3BDB8
+		padding: 8px 0
+		color: $accent
+		font-weight: 400
+		&:last-child
+			border-bottom: none
+		&:hover
+			color: $textcolor
+		&--active
+			color: $textcolor
+			border-bottom: 1px solid $textcolor
+		&--accent
+			color: #EB5757
+
+.card
+	display: block
+	border: 1px solid $white
+	&:hover
+		border: 1px solid $accent
+		.card__color-list
+			opacity: 1
+		.card__info
+			padding: 0 8px 8px
+	&__info
+	&__image
+		margin-bottom: 16px
+		img
+			object-fit: cover
+			width: 100%
+	&__price
+		margin-bottom: 8px
+	&__color-list
+		display: flex
+		flex-wrap: wrap
+		opacity: 0
+		@include media-breakpoint-down(xs)
+			display: none
+		label
+			margin-bottom: 4px
+		&__item
+			width: 16px
+			height: 12px
+			border-radius: 4px
+			margin-right: 4px
+			&:last-child
+				margin-right: 0
+			&.brown
+				background-color: #BF8A3D
+			&.black
+				background-color: #000000
+			&.red
+				background-color: #800000
+			&.blue
+				background-color: #6495ED
+			&.green
+				background-color: #6B8E23
+			input
+				display: none

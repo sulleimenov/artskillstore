@@ -1,0 +1,83 @@
+//variables
+$accent: #877B71
+$fontsize: 12px
+$textcolor: #000000
+$lineheight: 18px
+$userfont: 'TRY Clother', sans-serif
+$systemfont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+
+//colors
+$white: #FFFFFF
+$bg: #EEEDEC
+
+//bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 16px
+$gutter: $grid-gutter-width
+$grid-columns: 8 !default
+
+//import
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+@import 'node_modules/swiper/swiper-bundle'
+
+//fonts
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('TRY Clother', normal, 300, '../fonts/try-clother-light.woff2')
+@include font('TRY Clother', normal, 400, '../fonts/try-clother.woff2')
+
+//general styles
+::placeholder
+	color: $accent
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	display: block
+	border-radius: 0
+	&:focus:required:invalid
+		border-color: #eb5757
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	font-weight: 300
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	text-transform: uppercase
+
+a
+	color: $accent
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: $textcolor
+		border-bottom: 1px solid $accent
+
+p
+	text-transform: none
+
+h1, h2, h3, h4, h5, h6
+	font-weight: 400
+
+h2
+	font-size: 22px
+
+img
+	max-width: 100%
+	display: block

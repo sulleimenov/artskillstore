@@ -1,0 +1,27 @@
+.swiper-pagination-bullet
+	opacity: 1!important
+	width: 48px
+	height: 1px
+	background-color: $bg
+
+.swiper-pagination-bullet-active
+	background-color: $accent!important
+
+.row
+	@include media-breakpoint-up(md)
+		margin-left: 0
+		margin-right: 0
+
+@include media-breakpoint-down(xs)
+	.order-c-2
+		order: 2
+	.order-c-xs-0
+		order: 0
+	.order-c-xs-1
+		order: 1
+	.order-c-xs-2
+		order: 2
+	.order-c-xs-3
+		order: 3
+	.order-c-xs-4
+		order: 4
