@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="col-lg-1 col">
 					<a href="/" class="nav-item nav-item--logo">
-						<img src="/images/logo.svg" alt="Artskill Store">
+						<img src="images/logo.svg" alt="Artskill Store">
 					</a>
 				</div>
 				<div class="col-lg-1 d-none d-lg-block">
@@ -421,6 +421,45 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="popup catalog-popup">
+	<div class="catalog-list">
+		<a href="#" class="catalog-list__item catalog-list__item--active">Все категории</a>
+		<a href="#" class="catalog-list__item">Кейсы для украшений</a>
+		<a href="#" class="catalog-list__item">Кожаные косметички</a>
+		<a href="#" class="catalog-list__item">Блокноты и чехлы</a>
+		<a href="#" class="catalog-list__item">Обувь Homies</a>
+		<a href="#" class="catalog-list__item">Холдеры для карт и документов</a>
+		<a href="#" class="catalog-list__item">Мелочи</a>
+		<a href="#" class="catalog-list__item catalog-list__item--accent">Sales</a>
+	</div>
+	<form class="catalog-filter" action="" method="GET">
+		<div class="catalog-filter__item">
+			<div class="catalog-filter__title">Сортировка</div>
+			<select name="catalog_sort">
+				<option value="price_ask">По возрастанию цены</option>
+				<option value="price_desc">По убыванию цены</option>
+			</select>
+		</div>
+		<div class="catalog-filter__item">
+			<div class="catalog-filter__title">Цвет</div>
+			<div class="catalog-filter-color">
+				<input type="checkbox" name="brown" id="brown">
+				<label class="brown" for="brown"></label>
+				<input type="checkbox" name="black" id="black">
+				<label class="black" for="black"></label>
+				<input type="checkbox" name="red" id="red">
+				<label class="red" for="red"></label>
+				<input type="checkbox" name="blue" id="blue">
+				<label class="blue" for="blue"></label>
+				<input type="checkbox" name="gray" id="gray">
+				<label class="gray" for="gray"></label>
+				<input type="checkbox" name="filter_green" id="filter_green">
+				<label class="green" for="filter_green"></label>
+			</div>
+		</div>
+	</form>
+</div>
 
 	<footer class="footer">
 		<div class="container-fluid">
