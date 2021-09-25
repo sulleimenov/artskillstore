@@ -54,5 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
+	function showCategoryCatalog() {
+		const button = document.querySelector('.catalog-list-button')
+		const buttonOpen = document.querySelector('.catalog-list-button__open')
+		const buttonClose = document.querySelector('.catalog-list-button__close')
+		const content = document.querySelector('.catalog-popup')
+		button.addEventListener('click', () => {
+			content.classList.toggle('d-block')
+			buttonOpen.classList.toggle('d-none')
+			buttonClose.classList.toggle('d-block')
+		});
+	}
+
 	showCategoryFooter()
+	showCategoryCatalog()
 })

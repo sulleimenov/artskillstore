@@ -67,18 +67,18 @@ function styles() {
 }
 
 function images() {
-	return src(['app/img/src/**/*'])
-		.pipe(newer('app/img/dist'))
+	return src(['app/images/src/**/*'])
+		.pipe(newer('app/images/dist'))
 		.pipe(imagemin())
-		.pipe(dest('app/img/dist'))
+		.pipe(dest('app/images/dist'))
 		.pipe(browserSync.stream())
 }
 
 function buildcopy() {
 	return src([
 		'{app/js,app/css}/*.min.*',
-		'app/img/**/*.*',
-		'!app/img/src/**/*',
+		'app/images/**/*.*',
+		'!app/images/src/**/*',
 		'app/fonts/**/*'
 	], { base: 'app/' })
 	.pipe(dest('dist'))
@@ -113,7 +113,7 @@ function deploy() {
 function startwatch() {
 	watch(`app/sass/**/*`, { usePolling: true }, styles)
 	watch(['app/js/**/*.js', '!app/js/**/*.min.js'], { usePolling: true }, scripts)
-	watch('app/img/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
+	watch('app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
 	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
 }
 
