@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		Страница продукта
+	</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="images/favicon.ico">
+	<meta property="og:image" content="images/dist/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-1 col">
+					<a href="/" class="nav-item nav-item--logo">
+						<img src="images/logo.svg" alt="Artskill Store">
+					</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<a href="catalog.html" class="nav-item">Каталог</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<a href="#" class="nav-item">Бренд</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<a href="#" class="nav-item">Faq</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<a href="#" class="nav-item">Поиск</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<a href="#" class="nav-item">Аккаунт</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<a href="#" class="nav-item">En</a>
+				</div>
+				<div class="col-lg-1 col">
+					<div class="d-flex justify-content-between">
+						<div class="nav-item d-flex d-lg-none">Меню</div>
+						<a href="#" class="nav-item d-none d-lg-flex">$</a>
+						<a href="#" class="nav-item">Корзина 00</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<div class="breadcrumbs">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="breadcrumb-list">
+					<a class="breadcrumb-list__item" href="/">Главная</a>
+					<a class="breadcrumb-list__item" href="#">Страница продукта</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="product-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-1 col-md-1">
+					<div class="swiper gallery-thumbnail">
+						<div class="swiper-wrapper gallery-thumbnail__wrapper">
+							<div class="swiper-slide gallery-thumbnail__item">
+								<img src="images/products/mini_1.jpg" alt="image">
+							</div>
+							<div class="swiper-slide gallery-thumbnail__item">
+								<img src="images/products/mini_2.jpg" alt="image">
+							</div>
+							<div class="swiper-slide gallery-thumbnail__item">
+								<img src="images/products/mini_3.jpg" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<div class="swiper gallery-preview">
+						<div class="swiper-wrapper gallery-preview__wrapper">
+							<div class="swiper-slide gallery-preview__item">
+								<img src="images/products/full.jpg" alt="preview">
+							</div>
+							<div class="swiper-slide gallery-preview__item">
+								<img src="images/products/full.jpg" alt="preview">
+							</div>
+							<div class="swiper-slide gallery-preview__item">
+								<img src="images/products/full.jpg" alt="preview">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="col-lg-2 offset-lg-2 col-md-4">
+					<form action="#" method="GET" class="product">
+						<div class="product__header">
+							<h1 class="product__title">Artskill Store Love 23</h1>
+							<span class="product__price">₽ 12 800</span>
+						</div>
+						<div class="product__article">Артикул: 9.1.5</div>
+						<div class="product__favorites">
+							<div class="button button--hover" id="AddFavorites">
+								<span class="button-to-favorites">В избранное</span>
+								<span class="button-in-favorites d-none">В избранном</span>
+							</div>
+						</div>
+						<div class="product__color">
+							<div class="product__color-title">Цвет</div>
+							<div class="product__colors">
+								<input type="checkbox" name="brown" id="brown">
+								<label class="brown" for="brown"></label>
+								<input type="checkbox" name="black" id="black">
+								<label class="black" for="black"></label>
+								<input type="checkbox" name="red" id="red">
+								<label class="red" for="red"></label>
+								<input type="checkbox" name="blue" id="blue">
+								<label class="blue" for="blue"></label>
+								<input type="checkbox" name="gray" id="gray">
+								<label class="gray" for="gray"></label>
+								<input type="checkbox" name="filter_green" id="filter_green">
+								<label class="green" for="filter_green"></label>
+							</div>
+						</div>
+						<div class="product__offer">
+							Вы можете персонализировать ваш аксессуар. В таком случае оплата будет возможна только на сайте. Цена услуги Персонализация: 1 800 р.
+						</div>
+						<div class="product__customization">
+							<div class="product__customization-header">
+								<div class="product__customization-title">Персонализация:</div>
+								<div class="product__customization-tabs">
+									<label class="product__customization-tabs-item" for="no">
+										<input type="radio" name="customization" id="no">
+										<div class="product__radio">Нет</div>
+									</label>
+									<label class="product__customization-tabs-item" for="initials">
+										<input type="radio" name="customization" id="initials" value="on">
+										<div class="product__radio">Инициалы</div>
+									</label>
+									<label class="product__customization-tabs-item" for="quote">
+										<input type="radio" name="customization" id="quote">
+										<div class="product__radio">Цитата</div>
+									</label>
+								</div>
+							</div>
+							<div class="product__customization-tab d-none" id="initials_input">
+								<input name="initials" type="text" placeholder="А.А.">
+							</div>
+							<div class="product__customization-tab d-none" id="quote_input">
+								<input name="quote" type="text" placeholder="Love calls you by your name">
+							</div>
+						</div>
+						<div class="product__customization">
+							<div class="product__customization-header">
+								<div class="product__customization-title">Покрытие:</div>
+							</div>
+							<div class="product__customization-select">
+								<select name="coverage">
+									<option value="silver">Серебро</option>
+								</select>
+							</div>
+						</div>
+						<button>Добавить в корзину</button>
+						<div class="product__buttons">
+							<div class="button button--hover">Доставка и оплата</div>
+						</div>
+						<div class="product__buttons">
+							<div class="button button--hover">Описание и состав</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-8">
+				<div class="banner">
+					<a href="#">Любая полезная информация</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup catalog-popup">
+	<div class="catalog-list">
+		<a href="#" class="catalog-list__item catalog-list__item--active">Все категории</a>
+		<a href="#" class="catalog-list__item">Кейсы для украшений</a>
+		<a href="#" class="catalog-list__item">Кожаные косметички</a>
+		<a href="#" class="catalog-list__item">Блокноты и чехлы</a>
+		<a href="#" class="catalog-list__item">Обувь Homies</a>
+		<a href="#" class="catalog-list__item">Холдеры для карт и документов</a>
+		<a href="#" class="catalog-list__item">Мелочи</a>
+		<a href="#" class="catalog-list__item catalog-list__item--accent">Sales</a>
+	</div>
+	<form class="catalog-filter" action="" method="GET">
+		<div class="catalog-filter__item">
+			<div class="catalog-filter__title">Сортировка</div>
+			<select name="catalog_sort">
+				<option value="price_ask">По возрастанию цены</option>
+				<option value="price_desc">По убыванию цены</option>
+			</select>
+		</div>
+		<div class="catalog-filter__item">
+			<div class="catalog-filter__title">Цвет</div>
+			<div class="catalog-filter-color">
+				<input type="checkbox" name="brown" id="brown">
+				<label class="brown" for="brown"></label>
+				<input type="checkbox" name="black" id="black">
+				<label class="black" for="black"></label>
+				<input type="checkbox" name="red" id="red">
+				<label class="red" for="red"></label>
+				<input type="checkbox" name="blue" id="blue">
+				<label class="blue" for="blue"></label>
+				<input type="checkbox" name="gray" id="gray">
+				<label class="gray" for="gray"></label>
+				<input type="checkbox" name="filter_green" id="filter_green">
+				<label class="green" for="filter_green"></label>
+			</div>
+		</div>
+	</form>
+</div>
+
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-2">
+					<ul class="footer__list">
+						<li>
+							<a href="#">Персональная информация</a>
+						</li>
+						<li>
+							<a href="#">Условия использования</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8">
+					<ul class="footer__list footer__list--category">
+						<li>
+							<a href="#">Все Категории</a>
+						</li>
+						<li>
+							<a href="#">Кейсы для украшений</a>
+						</li>
+						<li>
+							<a href="#">Кожаные косметички</a>
+						</li>
+						<li>
+							<a href="#">Блокноты и чехлы</a>
+						</li>
+						<li>
+							<a href="#">Обувь Homies</a>
+						</li>
+						<li>
+							<a href="#">Холдеры для карт и документов</a>
+						</li>
+						<li>
+							<a href="#">Мелочи</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8">
+					<ul class="footer__list">
+						<li>
+							<a href="#">Аккаунт</a>
+						</li>
+						<li>
+							<a href="#">Бренд</a>
+						</li>
+						<li>
+							<a href="#">faq</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8">
+					<ul class="footer__list">
+						<li>
+							<a href="#">Instagram</a>
+						</li>
+						<li>
+							<a href="#">Facebook</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer__bottom">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-4">
+					<p>© Artskillstore 2021</p>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-1">
+					<a href="tel:89215868890">8 921 586 88 90</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-2">
+					<a href="mailto:artskillstore@gmail.com">artskillstore@gmail.com</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-3">
+					<p>Санкт-Петербург</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
