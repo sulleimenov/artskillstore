@@ -91,7 +91,12 @@
 								<input name="initials" type="text" placeholder="А.А.">
 							</div>
 							<div class="product__customization-tab d-none" id="quote_input">
-								<input name="quote" type="text" placeholder="Love calls you by your name">
+								<select name="quote">
+									<option value="Love calls you by your name">Love calls you by your name</option>
+									<option value="Love calls you by your name">Love calls you by your name</option>
+									<option value="Love calls you by your name">Love calls you by your name</option>
+									<option value="Love calls you by your name">Love calls you by your name</option>
+								</select>
 							</div>
 						</div>
 						<div class="product__customization">
@@ -106,10 +111,10 @@
 						</div>
 						<button>Добавить в корзину</button>
 						<div class="product__buttons">
-							<div class="button button--hover">Доставка и оплата</div>
+							<div data-micromodal-open="delivery" class="button button--hover">Доставка и оплата</div>
 						</div>
 						<div class="product__buttons">
-							<div class="button button--hover">Описание и состав</div>
+							<div data-micromodal-open="description" class="button button--hover">Описание и состав</div>
 						</div>
 					</form>
 				</div>

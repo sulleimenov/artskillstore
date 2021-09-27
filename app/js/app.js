@@ -1,6 +1,7 @@
 // Import jQuery module (npm i jquery)
 import $ from 'jquery'
 import Marquee from 'jquery.marquee'
+import MicroModal from 'micromodal'
 import {
 	Swiper,
 	Pagination,
@@ -19,6 +20,10 @@ Swiper.use([Pagination, Autoplay, Controller, Thumbs, EffectFade])
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
 document.addEventListener('DOMContentLoaded', () => {
+	MicroModal.init({
+		openTrigger: 'data-micromodal-open',
+	})
+
 	const HomeBunner = new Swiper('.home-slider', {
 		loop: false,
 		preloadImages: false,
@@ -76,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 		loop: false,
 		preloadImages: false,
+		autoHeight: true,
 		lazy: true,
 		breakpoints: {
 			768: {
