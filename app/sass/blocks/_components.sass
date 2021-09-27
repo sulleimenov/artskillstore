@@ -63,6 +63,7 @@ button
 	padding-bottom: 2px
 	color: $white
 	transition: background 0.2s ease
+	font-weight: 300
 	&:hover
 		background-color: $textcolor
 
@@ -86,7 +87,9 @@ select
 	border-radius: 0
 
 .catalog-filter-color,
-.products__color-list
+.products__color-list,
+.product__colors,
+.recommended__colors
 	position: relative
 	input[type="checkbox"]:checked,
 	input[type="checkbox"]:not(:checked)
@@ -139,3 +142,9 @@ select
 	input[type="checkbox"]:not(:checked)+label::after
 		width: 14px
 		height: 10px
+
+input
+	border: 1px solid $accent
+	padding: 10px 16px
+	color: $accent
+	background-color: transparent
