@@ -8,97 +8,96 @@
 		</div>
 	</div>
 
-	<div class="popup catalog-popup">
-	<div class="catalog-list">
-		<a href="#" class="catalog-list__item catalog-list__item--active">Все категории</a>
-		<a href="#" class="catalog-list__item">Кейсы для украшений</a>
-		<a href="#" class="catalog-list__item">Кожаные косметички</a>
-		<a href="#" class="catalog-list__item">Блокноты и чехлы</a>
-		<a href="#" class="catalog-list__item">Обувь Homies</a>
-		<a href="#" class="catalog-list__item">Холдеры для карт и документов</a>
-		<a href="#" class="catalog-list__item">Мелочи</a>
-		<a href="#" class="catalog-list__item catalog-list__item--accent">Sales</a>
-	</div>
-	<form class="catalog-filter" action="" method="GET">
-		<div class="catalog-filter__item">
-			<div class="catalog-filter__title">Сортировка</div>
-			<select name="catalog_sort">
-				<option value="price_ask">По возрастанию цены</option>
-				<option value="price_desc">По убыванию цены</option>
-			</select>
+		<div class="popup catalog-popup">
+		<div class="catalog-list">
+			<a href="catalog.html" class="catalog-list__item catalog-list__item--active">Все категории</a>
+			<a href="catalog.html" class="catalog-list__item">Кейсы для украшений</a>
+			<a href="catalog.html" class="catalog-list__item">Кожаные косметички</a>
+			<a href="catalog.html" class="catalog-list__item">Блокноты и чехлы</a>
+			<a href="catalog.html" class="catalog-list__item">Обувь Homies</a>
+			<a href="catalog.html" class="catalog-list__item">Холдеры для карт и документов</a>
+			<a href="catalog.html" class="catalog-list__item">Мелочи</a>
+			<a href="catalog.html" class="catalog-list__item catalog-list__item--accent">Sales</a>
 		</div>
-		<div class="catalog-filter__item">
-			<div class="catalog-filter__title">Цвет</div>
-			<div class="catalog-filter-color">
-				<input type="checkbox" name="brown" id="brown">
-				<label class="brown" for="brown"></label>
-				<input type="checkbox" name="black" id="black">
-				<label class="black" for="black"></label>
-				<input type="checkbox" name="red" id="red">
-				<label class="red" for="red"></label>
-				<input type="checkbox" name="blue" id="blue">
-				<label class="blue" for="blue"></label>
-				<input type="checkbox" name="gray" id="gray">
-				<label class="gray" for="gray"></label>
-				<input type="checkbox" name="filter_green" id="filter_green">
-				<label class="green" for="filter_green"></label>
+		<form class="catalog-filter" action="" method="GET">
+			<div class="catalog-filter__item">
+				<div class="catalog-filter__title">Сортировка</div>
+				<select name="catalog_sort">
+					<option value="price_ask">По возрастанию цены</option>
+					<option value="price_desc">По убыванию цены</option>
+				</select>
 			</div>
-		</div>
-	</form>
-</div>
-
-<div class="modal micromodal-slide" id="delivery" aria-hidden="true">
-	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-		<div class="modal__container" role="dialog" aria-modal="true">
-			<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
-			<div class="modal__content">
-				<h2>Доставка</h2>
-				<p>-Какую службу доставки вы используете?</p>
-				<p>Мы работаем с компанией СДЭК. Вы можете выбрать доставку до ПВЗ в вашем городе, либо до двери. Рассчитать стоимость доставки можно при оформлении заказа на сайте или перейдя по ссылке: https://www.cdek.ru/ru/calculator</p>
-				<p>В городе Санкт-Петербург у нас есть свой штатный курьер. Доставка производится в течении 1-2 рабочих дней при наличия изделий на складе. Доставка по Санкт-Петербургу 400 руб. пригород от 500 руб.</p>
-				<p>-Возможна ли международная доставка?</p>
-				<p>Для международной доставки мы используем EMS Почту России. Вы сможете забрать свою покупку на почте. Отправка почтой России осуществляется при 100% оплате у нас на сайте. Стоимость: 2200 рублей</p>
-				<br>
-				<h2>Возможен ли возврат?</h2>
-				<p>Возврат возможен, если изделия не были персонализированы, в другом случае возврат невозможен. При необходимости напишите нам, с вами свяжется менеджер для уточнения всех инструкций.</p>
+			<div class="catalog-filter__item">
+				<div class="catalog-filter__title">Цвет</div>
+				<div class="catalog-filter-color">
+					<input type="checkbox" name="brown" id="brown">
+					<label class="brown" for="brown"></label>
+					<input type="checkbox" name="black" id="black">
+					<label class="black" for="black"></label>
+					<input type="checkbox" name="red" id="red">
+					<label class="red" for="red"></label>
+					<input type="checkbox" name="blue" id="blue">
+					<label class="blue" for="blue"></label>
+					<input type="checkbox" name="gray" id="gray">
+					<label class="gray" for="gray"></label>
+					<input type="checkbox" name="filter_green" id="filter_green">
+					<label class="green" for="filter_green"></label>
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
-</div>
 
-<div class="modal micromodal-slide" id="description" aria-hidden="true">
-	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-		<div class="modal__container" role="dialog" aria-modal="true">
-			<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
-			<div class="modal__content">
-				<h2>Описание и состав</h2>
-				<p>Описание товара</p>
-				<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свой языкового имени парадигматическая они скатился, буквоград семь составитель выйти пояс текстов эта безопасную, продолжил имеет маленький свое снова своих?</p>
+	<div class="modal micromodal-slide" id="delivery" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true">
+				<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
+				<div class="modal__content">
+					<h2>Доставка</h2>
+					<p>-Какую службу доставки вы используете?</p>
+					<p>Мы работаем с компанией СДЭК. Вы можете выбрать доставку до ПВЗ в вашем городе, либо до двери. Рассчитать стоимость доставки можно при оформлении заказа на сайте или перейдя по ссылке: https://www.cdek.ru/ru/calculator</p>
+					<p>В городе Санкт-Петербург у нас есть свой штатный курьер. Доставка производится в течении 1-2 рабочих дней при наличия изделий на складе. Доставка по Санкт-Петербургу 400 руб. пригород от 500 руб.</p>
+					<p>-Возможна ли международная доставка?</p>
+					<p>Для международной доставки мы используем EMS Почту России. Вы сможете забрать свою покупку на почте. Отправка почтой России осуществляется при 100% оплате у нас на сайте. Стоимость: 2200 рублей</p>
+					<br>
+					<h2>Возможен ли возврат?</h2>
+					<p>Возврат возможен, если изделия не были персонализированы, в другом случае возврат невозможен. При необходимости напишите нам, с вами свяжется менеджер для уточнения всех инструкций.</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="modal micromodal-slide" id="catalog" aria-hidden="true">
-	<div class="modal-popup" tabindex="-1" data-micromodal-close>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-2 offset-lg-1">
-					<div class="modal-popup__wrapper">
-						<div class="modal-popup__header">
-							<span>> Каталог</span>
-							<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
-						</div>
-						<div class="modal-popup__content">
-							<div class="catalog-list">
-								<a href="#" class="catalog-list__item">Все категории</a>
-								<a href="#" class="catalog-list__item">Кейсы для украшений</a>
-								<a href="#" class="catalog-list__item">Кожаные косметички</a>
-								<a href="#" class="catalog-list__item">Блокноты и чехлы</a>
-								<a href="#" class="catalog-list__item">Обувь Homies</a>
-								<a href="#" class="catalog-list__item">Холдеры для карт и документов</a>
-								<a href="#" class="catalog-list__item">Мелочи</a>
-								<a href="#" class="catalog-list__item catalog-list__item--accent">Sales</a>
+	<div class="modal micromodal-slide" id="description" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true">
+				<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
+				<div class="modal__content">
+					<h2>Описание и состав</h2>
+					<p>Описание товара</p>
+					<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свой языкового имени парадигматическая они скатился, буквоград семь составитель выйти пояс текстов эта безопасную, продолжил имеет маленький свое снова своих?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="catalog" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-1">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Каталог</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a href="catalog.html" class="link">Все категории</a>
+								<a href="catalog.html" class="link">Кейсы для украшений</a>
+								<a href="catalog.html" class="link">Кожаные косметички</a>
+								<a href="catalog.html" class="link">Блокноты и чехлы</a>
+								<a href="catalog.html" class="link">Обувь Homies</a>
+								<a href="catalog.html" class="link">Холдеры для карт и документов</a>
+								<a href="catalog.html" class="link">Мелочи</a>
+								<a href="catalog.html" class="link link--sales">Sales</a>
 							</div>
 						</div>
 					</div>
@@ -106,27 +105,212 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="modal micromodal-slide" id="search" aria-hidden="true">
-	<div class="modal-popup" tabindex="-1" data-micromodal-close>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-2 offset-lg-4">
-					<div class="modal-popup__wrapper">
-						<div class="modal-popup__header">
-							<span>> Введите запрос</span>
-							<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
-						</div>
-						<div class="modal-popup__content">
-							Result
+	<div class="modal micromodal-slide" id="faq" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-3">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Faq</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a href="#" class="link">Оплата, доставка, возврат</a>
+								<a href="#" class="link">Где купить</a>
+								<a href="#" class="link">Контакты</a>
+								<a href="#" class="link">Блокноты и чехлы</a>
+								<a href="#" class="link">Сотрудничество</a>
+								<a href="#" class="link">Персонализация</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+	<div class="modal micromodal-slide" id="account" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-5">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Аккаунт</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a href="#" class="link">Мои заказы</a>
+								<a href="#" class="link">Личные данные</a>
+								<a href="#" class="link link--favourites">
+									<span>Избранное</span>
+									<span>0</span>
+								</a>
+								<a href="#" class="link">Войти</a>
+								<a href="#" class="link">Зарегистрироваться</a>
+								<!-- <a href="#" class="link link--close">Выйти</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="search" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-4">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">
+									<input type="text" placeholder="Введите запрос">
+								</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<div class="search">
+									<div class="search__header">
+										<span>Результат поиска</span>
+										<span>Найдены 2 товара</span>
+									</div>
+									<div class="search__list">
+										<div class="search__list-item">
+											<div class="search__list-header">
+												<span>Artskill Store Love 23</span>
+												<span>₽ 12 800</span>
+											</div>
+											<div class="search__body">
+												<div class="search__image">
+													<img src="images/products/mini_1.jpg" alt="image">
+												</div>
+												<div class="search__info">
+													<div class="search__article">
+														Артикул: 9.1.5
+													</div>
+													<div class="search__colors">
+														<div class="search__colors-title">Цвет</div>
+														<input type="checkbox" name="brown" id="brown">
+														<label class="brown" for="brown"></label>
+														<input type="checkbox" name="black" id="black">
+														<label class="black" for="black"></label>
+														<input type="checkbox" name="red" id="red">
+														<label class="red" for="red"></label>
+														<input type="checkbox" name="blue" id="blue">
+														<label class="blue" for="blue"></label>
+														<input type="checkbox" name="gray" id="gray">
+														<label class="gray" for="gray"></label>
+														<input type="checkbox" name="filter_green" id="filter_green">
+														<label class="green" for="filter_green"></label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search__list-item">
+											<div class="search__list-header">
+												<span>Artskill Store Love 23</span>
+												<span>₽ 12 800</span>
+											</div>
+											<div class="search__body">
+												<div class="search__image">
+													<img src="images/products/mini_2.jpg" alt="image">
+												</div>
+												<div class="search__info">
+													<div class="search__article">
+														Артикул: 9.1.5
+													</div>
+													<div class="search__colors">
+														<div class="search__colors-title">Цвет</div>
+														<input type="checkbox" name="brown" id="brown">
+														<label class="brown" for="brown"></label>
+														<input type="checkbox" name="black" id="black">
+														<label class="black" for="black"></label>
+														<input type="checkbox" name="red" id="red">
+														<label class="red" for="red"></label>
+														<input type="checkbox" name="blue" id="blue">
+														<label class="blue" for="blue"></label>
+														<input type="checkbox" name="gray" id="gray">
+														<label class="gray" for="gray"></label>
+														<input type="checkbox" name="filter_green" id="filter_green">
+														<label class="green" for="filter_green"></label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="language" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-6">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Язык</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">En</a>
+								<a class="link" href="#">Рус</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="currency" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-7">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Валюта</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">$</a>
+								<a class="link" href="#">€</a>
+								<a class="link" href="#">Руб</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal micromodal-slide" id="basket" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true">
+				<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
+				<div class="modal__content">
+					<h2>Доставка</h2>
+					<p>-Какую службу доставки вы используете?</p>
+					<p>Мы работаем с компанией СДЭК. Вы можете выбрать доставку до ПВЗ в вашем городе, либо до двери. Рассчитать стоимость доставки можно при оформлении заказа на сайте или перейдя по ссылке: https://www.cdek.ru/ru/calculator</p>
+					<p>В городе Санкт-Петербург у нас есть свой штатный курьер. Доставка производится в течении 1-2 рабочих дней при наличия изделий на складе. Доставка по Санкт-Петербургу 400 руб. пригород от 500 руб.</p>
+					<p>-Возможна ли международная доставка?</p>
+					<p>Для международной доставки мы используем EMS Почту России. Вы сможете забрать свою покупку на почте. Отправка почтой России осуществляется при 100% оплате у нас на сайте. Стоимость: 2200 рублей</p>
+					<br>
+					<h2>Возможен ли возврат?</h2>
+					<p>Возврат возможен, если изделия не были персонализированы, в другом случае возврат невозможен. При необходимости напишите нам, с вами свяжется менеджер для уточнения всех инструкций.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer class="footer">
 		<div class="container-fluid">
