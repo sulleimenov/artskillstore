@@ -7,7 +7,38 @@
 	align-items: center
 	height: 32px
 	color: $textcolor
+	cursor: pointer
 	&--logo
 		padding-top: 2px
 		&:hover
 			border-bottom: none
+
+.mobile-menu
+	&__box-title
+		color: $accent
+		background: url(../images/icons/down.svg) right 16px center no-repeat
+		&.show
+			margin-bottom: 16px
+	&__box-list
+		display: flex
+		flex-direction: column
+		height: 0
+		visibility: hidden
+		&.show
+			height: auto
+			visibility: visible
+	&__box
+		display: flex
+		flex-direction: column
+		padding-top: 16px
+		padding-bottom: 16px
+		border-bottom: 1px solid $bg
+		&:last-child
+			border-bottom: none
+		a
+			margin-bottom: 8px
+			&:last-child
+				margin-bottom: 0
+		&--contact
+			a
+				color: $textcolor

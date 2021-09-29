@@ -21,7 +21,15 @@ Swiper.use([Pagination, Autoplay, Controller, Thumbs, EffectFade])
 
 document.addEventListener('DOMContentLoaded', () => {
 	MicroModal.init({
+		onShow: modal => console.info(`${modal.id} is shown`),
+		onClose: modal => console.info(`${modal.id} is hidden`),
 		openTrigger: 'data-micromodal-open',
+		closeTrigger: 'data-micromodal-close',
+		// disableScroll: true,
+		disableFocus: false,
+		awaitOpenAnimation: true,
+		// awaitCloseAnimation: true,
+		// debugMode: true
 	})
 
 	const HomeBunner = new Swiper('.home-slider', {
@@ -109,6 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+	function showCategoryHeader() {
+		const button = document.querySelector('.mobile-menu__box-title')
+		const content = document.querySelector('.mobile-menu__box-list')
+		if (button) {
+			button.addEventListener('click', () => {
+				content.classList.toggle('show')
+				button.classList.toggle('show')
+			})
+		}
+	}
+
 	function showCategoryCatalog() {
 		const button = document.querySelector('.catalog-list-button')
 		const buttonOpen = document.querySelector('.catalog-list-button__open')
@@ -162,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	showCategoryFooter()
+	showCategoryHeader()
 	showCategoryCatalog()
 	AddFavorites()
 	CustomizationInput()

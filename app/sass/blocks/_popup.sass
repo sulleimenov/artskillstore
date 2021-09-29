@@ -8,7 +8,11 @@
 		padding-right: 10px
 
 .modal
-	position: relative
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
 	z-index: 999
 	font-family: $userfont
 	&__overlay
@@ -35,3 +39,195 @@
 			text-transform: uppercase
 			font-size: 12px
 			margin-bottom: 16px
+
+.modal-popup
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	&__wrapper
+		border: 1px solid $bg
+		border-top: none
+		padding-left: 8px
+		padding-right: 8px
+		padding-bottom: 8px
+		background-color: $white
+		position: relative
+		@include media-breakpoint-down(md)
+			padding-left: 0
+			padding-right: 0
+		@include media-breakpoint-down(md)
+			&::after
+				content: ''
+				position: absolute
+				width: 16px
+				height: 100%
+				background-color: #fff
+				top: 0
+				right: -16px
+				@include media-breakpoint-down(sm)
+					width: 10px
+					right: -10px
+			&::before
+				content: ''
+				position: absolute
+				width: 16px
+				height: 100%
+				background-color: #fff
+				top: 0
+				left: -16px
+				@include media-breakpoint-down(sm)
+					width: 10px
+					left: -10px
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 32px
+		border-bottom: 1px solid $bg
+		margin-bottom: 24px
+	&__title
+		position: relative
+		padding-left: 14px
+		color: $textcolor
+		width: 100%
+		&::before
+			content: '>'
+			position: absolute
+			left: 0
+		input
+			border: none
+			padding: 0
+			width: 100%
+			padding-right: 10px
+	&__close
+		cursor: pointer
+		color: $accent
+	&__content
+		.catalog-list
+			margin-bottom: 0
+
+.basket
+	position: relative
+	background-color: $white
+	margin-top: 32px
+	height: calc(100vh - 32px)
+	width: 100%
+	padding-top: 48px
+	padding-bottom: 48px
+	padding-left: 16px
+	@include media-breakpoint-down(md)
+		padding-left: 0
+		height: 100%
+	&__close
+		cursor: pointer
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: -16px
+		background-color: $white
+		width: 16px
+		height: 100%
+		@include media-breakpoint-down(sm)
+			display: none
+	&__header
+		display: flex
+		justify-content: space-between
+		padding-bottom: 32px
+		border-bottom: 1px solid $bg
+		span:last-child
+			color: $accent
+	&__list
+		height: calc(100% - 150px)
+		@include media-breakpoint-up(md)
+			overflow-y: auto
+		&::-webkit-scrollbar
+			width: 0
+			background: transparent
+	&__item
+		padding-top: 24px
+		padding-bottom: 24px
+		border-bottom: 1px solid $bg
+		&:last-child
+			margin-bottom: 0
+			border-bottom: none
+	&__item-header
+		display: flex
+		justify-content: space-between
+		margin-bottom: 24px
+	&__item-body
+		display: flex
+	&__item-image
+		width: 96px
+		height: 120px
+		margin-right: 24px
+	&__item-article
+		text-transform: none
+		color: rgba($textcolor, 0.50)
+		margin-bottom: 12px
+	&__item-colors
+		margin-bottom: 12px
+		span
+			display: block
+			margin-bottom: 4px
+	&__item-info
+		width: 100%
+	&__item-color
+		width: 32px
+		height: 12px
+		border-radius: 4px
+	&__item-customization
+		margin-bottom: 12px
+		display: flex
+		flex-direction: column
+		span
+			display: block
+		span:first-child
+			margin-bottom: 4px
+		span:last-child
+			color: rgba($textcolor, 0.50)
+	&__item-navigation
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item-quantity
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		input
+			padding: 0 5px
+			width: 30px
+			height: 18px
+			border: none
+			text-align: center
+	&__item-favorites
+		cursor: pointer
+		background: url(../images/icons/favorites.svg) left 5px no-repeat
+		padding-left: 15px
+		@include media-breakpoint-down(md)
+			margin-bottom: 12px
+	&__item-delete
+		cursor: pointer
+	&__total
+	&__total-header
+		display: flex
+		margin-bottom: 16px
+		padding: 16px 0
+		justify-content: space-between
+		border-top: 1px solid $bg
+		border-bottom: 1px solid $bg
+
+.basket-quantity
+	width: 11px
+	height: 11px
+	border: 1px solid $accent
+	background-repeat: no-repeat
+	background-position: center
+	cursor: pointer
+	&--minus
+		background-image: url(../images/icons/quantity-minus.svg)
+	&--plus
+		background-image: url(../images/icons/quantity-plus.svg)
