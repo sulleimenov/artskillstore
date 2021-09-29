@@ -347,19 +347,100 @@
 	</div>
 	
 	<div class="modal micromodal-slide" id="basket" aria-hidden="true">
-		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-			<div class="modal__container" role="dialog" aria-modal="true">
-				<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
-				<div class="modal__content">
-					<h2>Доставка</h2>
-					<p>-Какую службу доставки вы используете?</p>
-					<p>Мы работаем с компанией СДЭК. Вы можете выбрать доставку до ПВЗ в вашем городе, либо до двери. Рассчитать стоимость доставки можно при оформлении заказа на сайте или перейдя по ссылке: https://www.cdek.ru/ru/calculator</p>
-					<p>В городе Санкт-Петербург у нас есть свой штатный курьер. Доставка производится в течении 1-2 рабочих дней при наличия изделий на складе. Доставка по Санкт-Петербургу 400 руб. пригород от 500 руб.</p>
-					<p>-Возможна ли международная доставка?</p>
-					<p>Для международной доставки мы используем EMS Почту России. Вы сможете забрать свою покупку на почте. Отправка почтой России осуществляется при 100% оплате у нас на сайте. Стоимость: 2200 рублей</p>
-					<br>
-					<h2>Возможен ли возврат?</h2>
-					<p>Возврат возможен, если изделия не были персонализированы, в другом случае возврат невозможен. При необходимости напишите нам, с вами свяжется менеджер для уточнения всех инструкций.</p>
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-6">
+						<form action="#" method="GET" class="basket">
+							<div class="basket__header">
+								<span>Ваш заказ (2 товара)</span>
+								<span class="basket__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="basket__list">
+								<div class="basket__item">
+									<div class="basket__item-header">
+										<span>Artskill Store Love 23</span>
+										<span>₽ 12 800</span>
+									</div>
+									<div class="basket__item-body">
+										<div class="basket__item-image">
+											<img src="images/products/full.jpg" alt="image">
+										</div>
+										<div class="basket__item-info">
+											<div class="basket__item-article">Артикул: 9.1.5</div>
+											<div class="basket__item-colors">
+												<span>Цвет</span>
+												<div class="basket__item-color brown"></div>
+											</div>
+											<div class="basket__item-customization">
+												<span>Персонализация (инициалы):</span>
+												<span>А. Ю.</span>
+											</div>
+											<div class="basket__item-customization">
+												<span>Покрытие:</span>
+												<span>СЕРЕБРО</span>
+											</div>
+											<div class="basket__item-navigation">
+												<div class="basket__item-favorites">В избранное</div>
+												<div class="basket__item-quantity">
+													<div class="basket-quantity basket-quantity--minus"></div>
+													<input type="text" name="quantity" value="1" placeholder="1">
+													<div class="basket-quantity basket-quantity--plus"></div>
+												</div>
+												<div class="basket__item-delete">
+													Удалить
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__item">
+									<div class="basket__item-header">
+										<span>Artskill Store Love 23</span>
+										<span>₽ 12 800</span>
+									</div>
+									<div class="basket__item-body">
+										<div class="basket__item-image">
+											<img src="images/products/full.jpg" alt="image">
+										</div>
+										<div class="basket__item-info">
+											<div class="basket__item-article">Артикул: 9.1.5</div>
+											<div class="basket__item-colors">
+												<span>Цвет</span>
+												<div class="basket__item-color brown"></div>
+											</div>
+											<div class="basket__item-customization">
+												<span>Персонализация (инициалы):</span>
+												<span>А. Ю.</span>
+											</div>
+											<div class="basket__item-customization">
+												<span>Покрытие:</span>
+												<span>СЕРЕБРО</span>
+											</div>
+											<div class="basket__item-navigation">
+												<div class="basket__item-favorites">В избранное</div>
+												<div class="basket__item-quantity">
+													<div class="basket-quantity basket-quantity--minus"></div>
+													<input type="text" name="quantity" value="1" placeholder="1">
+													<div class="basket-quantity basket-quantity--plus"></div>
+												</div>
+												<div class="basket__item-delete">
+													Удалить
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__total">
+								<div class="basket__total-header">
+									<span>Итого</span>
+									<span>₽ 25 600</span>
+								</div>
+								<button type="submit" class="basket__go">Перейти к оформлению</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
