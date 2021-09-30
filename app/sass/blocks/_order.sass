@@ -1,0 +1,129 @@
+.order
+	padding: 16px 0 0 0
+
+.order-info
+	padding: 48px 0
+	@include media-breakpoint-down(md)
+		padding: 16px 0
+	&__wrapper
+		display: none
+		margin-top: 32px
+		@include media-breakpoint-up(lg)
+			display: block
+		@include media-breakpoint-down(md)
+			padding-bottom: 32px
+			border-bottom: 1px solid $textcolor
+	&__title
+		display: flex
+		justify-content: space-between
+		padding-bottom: 16px
+		border-bottom: 1px solid $textcolor
+		color: $textcolor
+		@include media-breakpoint-down(md)
+			padding-bottom: 32px
+	&__button
+		display: none
+		@include media-breakpoint-down(md)
+			display: block
+		&-show
+		&-close
+			display: none
+	&__total
+		display: flex
+		justify-content: space-between
+		color: $textcolor
+		margin-bottom: 8px
+	&__dely
+		color: $accent
+	&__list
+		margin-top: 32px
+	&__list-item
+		padding-top: 24px
+		margin-bottom: 24px
+		border-top: 1px solid $bg
+		&:last-child
+			margin-bottom: 0
+	&__list-title
+		display: flex
+		justify-content: space-between
+		margin-bottom: 24px
+	&__list-box
+		display: flex
+	&__list-image
+		margin-right: 24px
+		width: 96px
+		height: 120px
+	&__list-art
+		text-transform: none
+		color: $accent
+		margin-bottom: 12px
+	&__list-colors
+		margin-bottom: 12px
+	&__list-color
+		margin-top: 8px
+		width: 32px
+		height: 12px
+		border-radius: 4px
+	&__list-custom
+		margin-bottom: 12px
+	&__list-custom-text
+		margin-top: 4px
+		color: $accent
+	&__list-cover-text
+		color: $accent
+		margin-top: 4px
+
+.back-to-shopping
+	display: inline-block
+	margin: 7px 0
+
+.row-revers
+	@include media-breakpoint-down(md)
+		flex-direction: column-reverse
+
+.order-title
+	font-weight: 300
+	color: $textcolor
+	margin-bottom: 16px
+	&--between
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	span
+		margin-right: 16px
+
+.order-button
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 40px
+	color: $white
+	background-color: $accent
+	transition: background 0.2s ease
+	font-weight: 300
+	border: none
+	&:hover
+		border-bottom: none
+		background-color: $textcolor
+		color: $white
+	&--top16
+		margin-top: 16px
+
+.order-line
+	margin: 24px 0
+	height: 1px
+	background-color: $bg
+
+.auth-facebook
+	border: 1px solid $accent
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 40px
+	transition: all 0.2s ease
+	&:hover
+		background-color: $textcolor
+		color: $white
+		border: none
+	svg
+		margin-right: 12px

@@ -142,6 +142,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+	function showOrder() {
+		const button = document.querySelector('.order-info__button-show')
+		const buttonClose = document.querySelector('.order-info__button-close')
+		const content = document.querySelector('.order-info__wrapper')
+		if (button) {
+			button.addEventListener('click', () => {
+				content.classList.add('d-block')
+				buttonClose.classList.add('d-block')
+				button.classList.add('d-none')
+			})
+		}
+		if (buttonClose) {
+			buttonClose.addEventListener('click', () => {
+				content.classList.remove('d-block')
+				buttonClose.classList.remove('d-block')
+				button.classList.remove('d-none')
+			})
+		}
+	}
+
 	function AddFavorites() {
 		const button = document.querySelector('#AddFavorites')
 		const star = document.querySelector('.product__favorites')
@@ -174,10 +194,12 @@ document.addEventListener('DOMContentLoaded', () => {
 				initials_input.classList.remove('d-block')
 			})
 		}
-		no.addEventListener('click', () => {
-			quote_input.classList.remove('d-block')
-			initials_input.classList.remove('d-block')
-		})
+		if (no) {
+			no.addEventListener('click', () => {
+				quote_input.classList.remove('d-block')
+				initials_input.classList.remove('d-block')
+			})
+		}
 	}
 
 	showCategoryFooter()
@@ -185,4 +207,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	showCategoryCatalog()
 	AddFavorites()
 	CustomizationInput()
+	showOrder()
 })
