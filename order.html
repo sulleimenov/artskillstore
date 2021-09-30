@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		Оформление - начало
+	</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="images/favicon.ico">
+	<meta property="og:image" content="images/dist/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-1 col">
+					<a href="https://sulleimenov.github.io/artskillstore" class="nav-item nav-item--logo">
+						<img src="images/logo.svg" alt="Artskill Store">
+					</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<div data-micromodal-open="catalog" class="nav-item">Каталог</div>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<a href="#" class="nav-item">Бренд</a>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<div data-micromodal-open="faq" class="nav-item">Faq</div>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<div data-micromodal-open="search" class="nav-item">Поиск</div>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<div data-micromodal-open="account" class="nav-item">Аккаунт</div>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<div data-micromodal-open="language" class="nav-item">En</div>
+				</div>
+				<div class="col-lg-1 col">
+					<div class="d-flex justify-content-between">
+						<div data-micromodal-open="menu" class="nav-item d-flex d-lg-none">Меню</div>
+						<div data-micromodal-open="currency" class="nav-item d-none d-lg-flex">$</div>
+						<div data-micromodal-open="basket" class="nav-item">Корзина 00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-8">
+				<a href="#" class="back-to-shopping">Вернуться к покупкам</a>
+			</div>
+		</div>
+		<div class="row row-revers">
+			<div class="col-lg-2 offset-lg-1">
+				<div class="order">
+					<div class="order-title">Оформить заказ как гость</div>
+					<a href="#" class="order-button">Продолжить как гость</a>
+					<div class="order-line"></div>
+					<div class="order-title order-title--between">
+						<span>У меня есть аккаунт</span>
+						<a href="#">Забыли пароль?</a>
+					</div>
+					<form action="#" method="GET">
+						<input class="form-input" type="email" placeholder="email" required>
+						<input class="form-input" type="password" placeholder="пароль" required>
+						<input class="order-button order-button--top16" type="submit" value="войти">
+					</form>
+					<div class="order-line"></div>
+					<div class="order-title">
+						<span>Еще нет аккаунта?</span>
+						<a href="#">Зарегистрируйтесь</a>
+					</div>
+					<div class="order-line"></div>
+					<div class="order-title">Или авторизуйтесь через соцсети:</div>
+					<a href="#" class="auth-facebook">
+						<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.33194 2.32658H6.33615V0.57758C6.1629 0.553747 5.56707 0.500122 4.87315 0.500122C3.42528 0.500122 2.43344 1.41083 2.43344 3.08466V4.62512H0.835693V6.58037H2.43344V11.5001H4.39236V6.58083H5.92549L6.16886 4.62558H4.3919V3.27854C4.39236 2.71341 4.54453 2.32658 5.33194 2.32658Z" fill="#3B5998"/>
+						</svg>
+						Facebook
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-2 offset-lg-3">
+				<div class="order-info">
+					<div class="order-info__title">
+						<span>Ваш заказ <span class="d-inline-block d-lg-none">(2 товара)</span></span>
+						<span class="d-none d-lg-block">2 товара</span>
+						<div class="order-info__button">
+							<div class="order-info__button-show">Раскрыть</div>
+							<div class="order-info__button-close">Закрыть</div>
+						</div>
+					</div>
+					<div class="order-info__wrapper">
+						<div class="order-info__total">
+							<span>Итого</span>
+							<span>₽ 25 600</span>
+						</div>
+						<div data-micromodal-open="delivery" class="order-info__dely">Доставка и оплата</div>
+						<div class="order-info__list">
+							<div class="order-info__list-item">
+								<div class="order-info__list-title">
+									<span>Artskill Store Love 23</span>
+									<span>₽ 12 800</span>
+								</div>
+								<div class="order-info__list-box">
+									<div class="order-info__list-image">
+										<img src="images/products/full.jpg" alt="image">
+									</div>
+									<div class="order-info__list-text">
+										<div class="order-info__list-art">Артикул: 9.1.5</div>
+										<div class="order-info__list-colors">
+											<span>Цвет</span>
+											<div class="order-info__list-color brown"></div>
+										</div>
+										<div class="order-info__list-custom">
+											<span>Персонализация (инициалы):</span>
+											<div class="order-info__list-custom-text">
+												А. Ю.
+											</div>
+										</div>
+										<div class="order-info__list-cover">
+											<span>Покрытие:</span>
+											<div class="order-info__list-cover-text">СЕРЕБРО</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-info__list-item">
+								<div class="order-info__list-title">
+									<span>Artskill Store Love 23</span>
+									<span>₽ 12 800</span>
+								</div>
+								<div class="order-info__list-box">
+									<div class="order-info__list-image">
+										<img src="images/products/full.jpg" alt="image">
+									</div>
+									<div class="order-info__list-text">
+										<div class="order-info__list-art">Артикул: 9.1.5</div>
+										<div class="order-info__list-colors">
+											<span>Цвет</span>
+											<div class="order-info__list-color brown"></div>
+										</div>
+										<div class="order-info__list-custom">
+											<span>Персонализация (инициалы):</span>
+											<div class="order-info__list-custom-text">
+												А. Ю.
+											</div>
+										</div>
+										<div class="order-info__list-cover">
+											<span>Покрытие:</span>
+											<div class="order-info__list-cover-text">СЕРЕБРО</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-8">
+				<div class="banner">
+					<a href="#">Любая полезная информация</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="popup catalog-popup">
+		<div class="catalog-list">
+			<a href="catalog.html" class="catalog-list__item catalog-list__item--active">Все категории</a>
+			<a href="catalog.html" class="catalog-list__item">Кейсы для украшений</a>
+			<a href="catalog.html" class="catalog-list__item">Кожаные косметички</a>
+			<a href="catalog.html" class="catalog-list__item">Блокноты и чехлы</a>
+			<a href="catalog.html" class="catalog-list__item">Обувь Homies</a>
+			<a href="catalog.html" class="catalog-list__item">Холдеры для карт и документов</a>
+			<a href="catalog.html" class="catalog-list__item">Мелочи</a>
+			<a href="catalog.html" class="catalog-list__item catalog-list__item--accent">Sales</a>
+		</div>
+		<form class="catalog-filter" action="" method="GET">
+			<div class="catalog-filter__item">
+				<div class="catalog-filter__title">Сортировка</div>
+				<select name="catalog_sort">
+					<option value="price_ask">По возрастанию цены</option>
+					<option value="price_desc">По убыванию цены</option>
+				</select>
+			</div>
+			<div class="catalog-filter__item">
+				<div class="catalog-filter__title">Цвет</div>
+				<div class="catalog-filter-color">
+					<input type="checkbox" name="brown" id="brown">
+					<label class="brown" for="brown"></label>
+					<input type="checkbox" name="black" id="black">
+					<label class="black" for="black"></label>
+					<input type="checkbox" name="red" id="red">
+					<label class="red" for="red"></label>
+					<input type="checkbox" name="blue" id="blue">
+					<label class="blue" for="blue"></label>
+					<input type="checkbox" name="gray" id="gray">
+					<label class="gray" for="gray"></label>
+					<input type="checkbox" name="filter_green" id="filter_green">
+					<label class="green" for="filter_green"></label>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal micromodal-slide" id="delivery" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true">
+				<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
+				<div class="modal__content">
+					<h2>Доставка</h2>
+					<p>-Какую службу доставки вы используете?</p>
+					<p>Мы работаем с компанией СДЭК. Вы можете выбрать доставку до ПВЗ в вашем городе, либо до двери. Рассчитать стоимость доставки можно при оформлении заказа на сайте или перейдя по ссылке: https://www.cdek.ru/ru/calculator</p>
+					<p>В городе Санкт-Петербург у нас есть свой штатный курьер. Доставка производится в течении 1-2 рабочих дней при наличия изделий на складе. Доставка по Санкт-Петербургу 400 руб. пригород от 500 руб.</p>
+					<p>-Возможна ли международная доставка?</p>
+					<p>Для международной доставки мы используем EMS Почту России. Вы сможете забрать свою покупку на почте. Отправка почтой России осуществляется при 100% оплате у нас на сайте. Стоимость: 2200 рублей</p>
+					<br>
+					<h2>Возможен ли возврат?</h2>
+					<p>Возврат возможен, если изделия не были персонализированы, в другом случае возврат невозможен. При необходимости напишите нам, с вами свяжется менеджер для уточнения всех инструкций.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="description" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true">
+				<div class="modal__close" aria-label="Закрыть" data-micromodal-close>Закрыть</div>
+				<div class="modal__content">
+					<h2>Описание и состав</h2>
+					<p>Описание товара</p>
+					<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Свой языкового имени парадигматическая они скатился, буквоград семь составитель выйти пояс текстов эта безопасную, продолжил имеет маленький свое снова своих?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="catalog" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-1">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Каталог</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a href="catalog.html" class="link">Все категории</a>
+								<a href="catalog.html" class="link">Кейсы для украшений</a>
+								<a href="catalog.html" class="link">Кожаные косметички</a>
+								<a href="catalog.html" class="link">Блокноты и чехлы</a>
+								<a href="catalog.html" class="link">Обувь Homies</a>
+								<a href="catalog.html" class="link">Холдеры для карт и документов</a>
+								<a href="catalog.html" class="link">Мелочи</a>
+								<a href="catalog.html" class="link link--sales">Sales</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="faq" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-3">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Faq</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a href="#" class="link">Оплата, доставка, возврат</a>
+								<a href="#" class="link">Где купить</a>
+								<a href="#" class="link">Контакты</a>
+								<a href="#" class="link">Блокноты и чехлы</a>
+								<a href="#" class="link">Сотрудничество</a>
+								<a href="#" class="link">Персонализация</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal micromodal-slide" id="menu" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-3">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Меню</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<div class="mobile-menu">
+									<div class="mobile-menu__box">
+										<div class="mobile-menu__box-title">Все категории</div>
+										<div class="mobile-menu__box-list">
+											<a href="#">Кейсы для украшений</a>
+											<a href="#">Кожаные косметички</a>
+										</div>
+									</div>
+									<div class="mobile-menu__box">
+										<a href="#">Аккаунт</a>
+										<a href="#">Бренд</a>
+										<a href="#">Faq</a>
+										<a href="#">Контакты</a>
+									</div>
+									<div class="mobile-menu__box">
+										<a href="#">Поиск</a>
+										<a href="#">En</a>
+										<a href="#">$</a>
+									</div>
+									<div class="mobile-menu__box">
+										<a href="#">Instagram</a>
+										<a href="#">Facebook</a>
+									</div>
+									<div class="mobile-menu__box">
+										<a href="#">Персональная информация</a>
+										<a href="#">Условия использования</a>
+									</div>
+									<div class="mobile-menu__box mobile-menu__box--contact">
+										<a href="#">8 921 586 88 90</a>
+										<a href="#">Artskillstore@gmail.com</a>
+										<a href="#">Санкт-Петербург</a>
+										<a href="#">© Artskillstore 2021</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="account" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-5">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Аккаунт</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a href="#" class="link">Мои заказы</a>
+								<a href="#" class="link">Личные данные</a>
+								<a href="#" class="link link--favourites">
+									<span>Избранное</span>
+									<span>0</span>
+								</a>
+								<a href="#" class="link">Войти</a>
+								<a href="#" class="link">Зарегистрироваться</a>
+								<!-- <a href="#" class="link link--close">Выйти</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="search" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-4">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">
+									<input type="text" placeholder="Введите запрос">
+								</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<div class="search">
+									<div class="search__header">
+										<span>Результат поиска</span>
+										<span>Найдены 2 товара</span>
+									</div>
+									<div class="search__list">
+										<div class="search__list-item">
+											<div class="search__list-header">
+												<span>Artskill Store Love 23</span>
+												<span>₽ 12 800</span>
+											</div>
+											<div class="search__body">
+												<div class="search__image">
+													<img src="images/products/mini_1.jpg" alt="image">
+												</div>
+												<div class="search__info">
+													<div class="search__article">
+														Артикул: 9.1.5
+													</div>
+													<div class="search__colors">
+														<div class="search__colors-title">Цвет</div>
+														<input type="checkbox" name="brown" id="brown">
+														<label class="brown" for="brown"></label>
+														<input type="checkbox" name="black" id="black">
+														<label class="black" for="black"></label>
+														<input type="checkbox" name="red" id="red">
+														<label class="red" for="red"></label>
+														<input type="checkbox" name="blue" id="blue">
+														<label class="blue" for="blue"></label>
+														<input type="checkbox" name="gray" id="gray">
+														<label class="gray" for="gray"></label>
+														<input type="checkbox" name="filter_green" id="filter_green">
+														<label class="green" for="filter_green"></label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="search__list-item">
+											<div class="search__list-header">
+												<span>Artskill Store Love 23</span>
+												<span>₽ 12 800</span>
+											</div>
+											<div class="search__body">
+												<div class="search__image">
+													<img src="images/products/mini_2.jpg" alt="image">
+												</div>
+												<div class="search__info">
+													<div class="search__article">
+														Артикул: 9.1.5
+													</div>
+													<div class="search__colors">
+														<div class="search__colors-title">Цвет</div>
+														<input type="checkbox" name="brown" id="brown">
+														<label class="brown" for="brown"></label>
+														<input type="checkbox" name="black" id="black">
+														<label class="black" for="black"></label>
+														<input type="checkbox" name="red" id="red">
+														<label class="red" for="red"></label>
+														<input type="checkbox" name="blue" id="blue">
+														<label class="blue" for="blue"></label>
+														<input type="checkbox" name="gray" id="gray">
+														<label class="gray" for="gray"></label>
+														<input type="checkbox" name="filter_green" id="filter_green">
+														<label class="green" for="filter_green"></label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="language" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-6">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Язык</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">En</a>
+								<a class="link" href="#">Рус</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="currency" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-7">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Валюта</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">$</a>
+								<a class="link" href="#">€</a>
+								<a class="link" href="#">Руб</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal micromodal-slide" id="basket" aria-hidden="true">
+		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-2 offset-lg-6">
+						<form action="#" method="GET" class="basket">
+							<div class="basket__header">
+								<span>Ваш заказ (2 товара)</span>
+								<span class="basket__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="basket__list">
+								<div class="basket__item">
+									<div class="basket__item-header">
+										<span>Artskill Store Love 23</span>
+										<span>₽ 12 800</span>
+									</div>
+									<div class="basket__item-body">
+										<div class="basket__item-image">
+											<img src="images/products/full.jpg" alt="image">
+										</div>
+										<div class="basket__item-info">
+											<div class="basket__item-article">Артикул: 9.1.5</div>
+											<div class="basket__item-colors">
+												<span>Цвет</span>
+												<div class="basket__item-color brown"></div>
+											</div>
+											<div class="basket__item-customization">
+												<span>Персонализация (инициалы):</span>
+												<span>А. Ю.</span>
+											</div>
+											<div class="basket__item-customization">
+												<span>Покрытие:</span>
+												<span>СЕРЕБРО</span>
+											</div>
+											<div class="basket__item-navigation">
+												<div class="basket__item-favorites">В избранное</div>
+												<div class="basket__item-quantity">
+													<div class="basket-quantity basket-quantity--minus"></div>
+													<input type="text" name="quantity" value="1" placeholder="1">
+													<div class="basket-quantity basket-quantity--plus"></div>
+												</div>
+												<div class="basket__item-delete">
+													Удалить
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__item">
+									<div class="basket__item-header">
+										<span>Artskill Store Love 23</span>
+										<span>₽ 12 800</span>
+									</div>
+									<div class="basket__item-body">
+										<div class="basket__item-image">
+											<img src="images/products/full.jpg" alt="image">
+										</div>
+										<div class="basket__item-info">
+											<div class="basket__item-article">Артикул: 9.1.5</div>
+											<div class="basket__item-colors">
+												<span>Цвет</span>
+												<div class="basket__item-color brown"></div>
+											</div>
+											<div class="basket__item-customization">
+												<span>Персонализация (инициалы):</span>
+												<span>А. Ю.</span>
+											</div>
+											<div class="basket__item-customization">
+												<span>Покрытие:</span>
+												<span>СЕРЕБРО</span>
+											</div>
+											<div class="basket__item-navigation">
+												<div class="basket__item-favorites">В избранное</div>
+												<div class="basket__item-quantity">
+													<div class="basket-quantity basket-quantity--minus"></div>
+													<input type="text" name="quantity" value="1" placeholder="1">
+													<div class="basket-quantity basket-quantity--plus"></div>
+												</div>
+												<div class="basket__item-delete">
+													Удалить
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="basket__total">
+								<div class="basket__total-header">
+									<span>Итого</span>
+									<span>₽ 25 600</span>
+								</div>
+								<button type="submit" class="basket__go">Перейти к оформлению</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-2">
+					<ul class="footer__list">
+						<li>
+							<a href="#">Персональная информация</a>
+						</li>
+						<li>
+							<a href="#">Условия использования</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8">
+					<ul class="footer__list footer__list--category">
+						<li>
+							<a href="#">Все Категории</a>
+						</li>
+						<li>
+							<a href="#">Кейсы для украшений</a>
+						</li>
+						<li>
+							<a href="#">Кожаные косметички</a>
+						</li>
+						<li>
+							<a href="#">Блокноты и чехлы</a>
+						</li>
+						<li>
+							<a href="#">Обувь Homies</a>
+						</li>
+						<li>
+							<a href="#">Холдеры для карт и документов</a>
+						</li>
+						<li>
+							<a href="#">Мелочи</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8">
+					<ul class="footer__list">
+						<li>
+							<a href="#">Аккаунт</a>
+						</li>
+						<li>
+							<a href="#">Бренд</a>
+						</li>
+						<li>
+							<a href="#">faq</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8">
+					<ul class="footer__list">
+						<li>
+							<a href="#">Instagram</a>
+						</li>
+						<li>
+							<a href="#">Facebook</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer__bottom">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-4">
+					<p>© Artskillstore 2021</p>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-1">
+					<a href="tel:89215868890">8 921 586 88 90</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-2">
+					<a href="mailto:artskillstore@gmail.com">artskillstore@gmail.com</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-4 col-8 order-c-xs-3">
+					<p>Санкт-Петербург</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
