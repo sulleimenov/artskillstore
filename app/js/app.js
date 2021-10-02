@@ -21,15 +21,17 @@ Swiper.use([Pagination, Autoplay, Controller, Thumbs, EffectFade])
 
 document.addEventListener('DOMContentLoaded', () => {
 	MicroModal.init({
-		onShow: modal => console.info(`${modal.id} is shown`),
-		onClose: modal => console.info(`${modal.id} is hidden`),
+		// onShow: (modal) => console.info(`${modal.id} is shown`),
+		// onClose: (modal) => console.info(`${modal.id} is hidden`),
 		openTrigger: 'data-micromodal-open',
 		closeTrigger: 'data-micromodal-close',
-		// disableScroll: true,
-		disableFocus: false,
 		awaitOpenAnimation: true,
 		// awaitCloseAnimation: true,
-		// debugMode: true
+		disableFocus: true,
+		onClose: function (modal, element, event) {
+			event.preventDefault()
+			event.stopPropagation()
+		},
 	})
 
 	const HomeBunner = new Swiper('.home-slider', {
@@ -176,6 +178,88 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+	const order = () => {
+		const orderVisibility = document.querySelector('.order__visibility')
+		const goToDelivery = document.querySelector('#goToDelivery')
+		const regionDelivery = document.querySelector('#regionDelivery')
+		const deliveryMethod = document.querySelector('#deliveryMethod')
+		const paymentMethod = document.querySelector('#paymentMethod')
+
+		const demonstratePersonalData = document.querySelector('#demonstratePersonalData')
+		const demonstrateRegionDelivery = document.querySelector('#demonstrateRegionDelivery')
+		const demonstrateDelivery = document.querySelector('#demonstrateDelivery')
+
+		const demonstrateCountry = document.querySelector('#demonstrateCountry')
+		const demonstrateCity = document.querySelector('#demonstrateCity')
+
+		const thenRegion = document.querySelector('#thenRegion')
+		const country = document.querySelector('#country')
+		const city = document.querySelector('#сity')
+		const thenPayment = document.querySelector('#thenPayment')
+
+		if (goToDelivery) {
+			goToDelivery.addEventListener('click', () => {
+				orderVisibility.classList.remove('show')
+				regionDelivery.classList.add('show')
+				demonstratePersonalData.classList.add('show')
+			})
+		}
+
+		if (thenRegion) {
+			thenRegion.onclick = () => {
+				country.classList.add('hidden')
+				city.classList.remove('hidden')
+				demonstrateRegionDelivery.classList.add('show')
+				demonstrateCountry.classList.remove('hidden')
+				thenRegion.classList.add('thenCity')
+				if (document.querySelector('.thenCity')) {
+					document.querySelector('.thenCity').onclick = () => {
+						demonstrateCity.classList.remove('hidden')
+						regionDelivery.classList.remove('show')
+						deliveryMethod.classList.add('show')
+					}
+				}
+			}
+		}
+
+		if(thenPayment) {
+			thenPayment.onclick = () => {
+				paymentMethod.classList.add('show')
+				deliveryMethod.classList.remove('show')
+				demonstrateDelivery.classList.add('show')
+			}
+		}
+
+		if (document.querySelector('#delivery')) {
+			document.querySelector('#delivery').onclick = () => {
+				document.querySelector('.order__delivery-delivery').classList.add('show')
+				document.querySelector('.order__delivery-pickup').classList.remove('show')
+			}
+			if(document.querySelector('#pickup')) {
+				document.querySelector('#pickup').onclick = () => {
+					document.querySelector('.order__delivery-pickup').classList.add('show')
+					document.querySelector('.order__delivery-delivery').classList.remove('show')
+				}
+			}
+		}
+
+		if (document.getElementById('selectDelivery')) {
+			let select = document.getElementById('selectDelivery')
+			let block = document.querySelectorAll('.order__delivery-info-text')
+			let lastIndex = 0 // После каждой смены опции, сохраняем сюда индекс предыдущего блока
+
+			select.addEventListener('change', function () {
+				block[lastIndex].style.display = 'none'
+				// Чтобы сразу делать именно его невидимым при следующей смене
+
+				let index = select.selectedIndex // Определить индекс выбранной опции
+				block[index].style.display = 'block' // Показать блок с соответствующим индексом
+
+				lastIndex = index // Обновить сохраненный индекс.
+			})
+		}
+	}
+
 	function CustomizationInput() {
 		const initials = document.querySelector('#initials')
 		const initials_input = document.querySelector('#initials_input')
@@ -208,4 +292,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	AddFavorites()
 	CustomizationInput()
 	showOrder()
+	order()
 })
