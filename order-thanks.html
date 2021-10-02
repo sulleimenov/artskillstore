@@ -8,7 +8,7 @@
 	<!-- <base href="/"> -->
 
 	<title>
-		Оформление - начало
+		Спасибо за покупку!
 	</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
@@ -60,121 +60,49 @@
 		</div>
 	</header>
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-8">
-			<a href="#" class="back-to-shopping">Вернуться к покупкам</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-4 offset-lg-1">
-			<form action="order-thanks.html" method="GET" class="order">
-				<div class="order__personal">
-					<div class="order__title">1. персональные данные</div>
-					<div class="order__visibility show" id="personalData">
-						<div class="order__box">
-							<input type="text" class="form-input" placeholder="Имя">
-							<input type="text" class="form-input" placeholder="Фамилия">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2 offset-lg-1">
+				<div class="order-thanks">
+					<h1 class="order-thanks__title">Спасибо за покупку!</h1>
+					<div class="order-thanks__item">
+						<div class="order-thanks__box">
+							<div class="order-thanks__subtitle">Номер заказа: 123765</div>
+							<p>Вы разместили заказ через гостевой аккаунт. Как только ваш заказ будет отправлен, вы получите email для отслеживания посылки. Если вы хотите отслеживать заказ онлайн, просто создайте учетную запись перед тем, как совершать покупку в следующий раз.</p>
 						</div>
-						<div class="order__box">
-							<input type="email" class="form-input" placeholder="Email">
-							<input type="text" class="form-input" placeholder="Телефон">
-						</div>
-						<div class="order__box-inner">
-							<div class="order__button" id="goToDelivery">К выбору доставки</div>
+						<div class="order-thanks__data">
+							<div class="order-thanks__subtitle">Дата заказа</div>
+							<p>05.09.2021</p>
 						</div>
 					</div>
-					<div class="order__demonstrate" id="demonstratePersonalData">
-						<div class="order__demonstrate-text">Александр</div>
-						<div class="order__demonstrate-text">Петров</div>
-						<div class="order__demonstrate-text">alexpetr@mail.ru</div>
-						<div class="order__demonstrate-text">+7 909 709 57 35</div>
-					</div>
-				</div>
-				<div class="order__delivery-region">
-					<div class="order__title">2. регион доставки</div>
-					<div class="order__demonstrate" id="demonstrateRegionDelivery">
-						<div class="order__demonstrate-text hidden" id="demonstrateCountry">Россия</div>
-						<div class="order__demonstrate-text hidden" id="demonstrateCity">Санкт-Петербург</div>
-					</div>
-					<div class="order__visibility" id="regionDelivery">
-						<div class="order__box-inner">
-							<input type="text" class="form-input" id="country" placeholder="Россия">
-							<input type="text" class="form-input hidden" id="сity" placeholder="Укажите город">
-							<div class="order__button" id="thenRegion">Далее</div>
+					<div class="order-thanks__item">
+						<div class="order-thanks__box">
+							<div class="order-thanks__subtitle">Персональные данные</div>
+							<p>Александр</p>
+							<p>Петров</p>
+							<p>alexpetr@mail.ru</p>
+							<p>+7 909 709 57 35</p>
 						</div>
-					</div>
-				</div>
-				<div class="order__delivery">
-					<div class="order__title">3. способ доставки</div>
-					<div class="order__visibility" id="deliveryMethod">
-						<div class="order__box-inner">
-							<label class="order__radio">
-								<input type="radio" name="delivery" id="pickup" checked>
-								<span>Самовызов</span>
-							</label>
-							<label class="order__radio">
-								<input type="radio" name="delivery" id="delivery">
-								<span>Доставка</span>
-							</label>
-							<div class="order__delivery-pickup show">
-								<span>Товар можете забрать в нашем офисе по адресу:</span>
-								<p>Санкт-Петербург пр. Медиков 3, литер А, территория Ленполиграфмаш</p>
-								<p>Стоимость: бесплатно</p>
-								<p>Часы работы: с пн по пт (с 11 до 19:00)</p>
-							</div>
-							<div class="order__delivery-delivery">
-								<select name="delivery" id="selectDelivery">
-									<option value="Курьерская по санкт-петербургу">Курьерская по санкт-петербургу</option>
-									<option value="СДЭК до ПВЗ в вашем городе">СДЭК до ПВЗ в вашем городе</option>
-									<option value="СДЭК до двери">СДЭК до двери</option>
-								</select>
-								<p class="order__delivery-info-text">В городе Санкт-Петербург у нас есть свой штатный курьер. Доставка производиться в течении 1-2 рабочих дней при наличия изделий на складе. Доставка по Санкт-Петербургу 400 руб. пригород от 500 руб.</p>
-								<p class="order__delivery-info-text">Мы работаем с компанией СДЭК. Вы можете выбрать доставку до ПВЗ в вашем городе, либо до двери. Рассчитать стоимость доставки можно при оформлении заказа на сайте или перейдя по ссылке: https://www.cdek.ru/ru/calculator</p>
-								<p class="order__delivery-info-text">Мы работаем с компанией СДЭК. Вы можете выбрать доставку до ПВЗ в вашем городе, либо до двери. Рассчитать стоимость доставки можно при оформлении заказа на сайте или перейдя по ссылке: https://www.cdek.ru/ru/calculator</p>
-								<div class="order-title order-title--mt">Адрес доставки</div>
-								<input type="text" class="form-input" placeholder="Адрес">
-								<textarea name="comment" id="" rows="3" placeholder="Комментарий к доставке"></textarea>
-							</div>
-							<div class="order__button" id="thenPayment">К выбору способа оплаты</div>
-						</div>
-					</div>
-					<div class="order__demonstrate" id="demonstrateDelivery">
-						<div class="order__demonstrate-text">
+						<div class="order-thanks__box">
+							<div class="order-thanks__subtitle">Способ доставки</div>
+							<div class="order-thanks__subtitle">Самовывоз по Адресу:</div>
 							<p>Санкт-Петербург пр. Медиков 3, литер А, территория Ленполиграфмаш</p>
 							<p>Стоимость: бесплатно</p>
 							<p>Часы работы: с пн по пт (с 11 до 19:00)</p>
 						</div>
-						<div class="order__demonstrate-text">
-							<p>Комментарий к доставке:</p>
-							<p>Позвонить за 2 часа</p>
+						<div class="order-thanks__box">
+							<div class="order-thanks__subtitle">Способ оплаты</div>
+							<p>Оплата на сайте</p>
 						</div>
 					</div>
-				</div>
-				<div class="order__method">
-					<div class="order__title">4. способ оплаты</div>
-					<div class="order__visibility" id="paymentMethod">
-						<div class="order__box-inner">
-							<div class="order__accent">Вы выбрали персонализировать ваш аксессуар. В таком случае оплата будет возможна только на сайте. Цена услуги Персонализация: 1 800 р.</div>
-							<select name="delivery">
-								<option value="Оплата на сайте">Оплата на сайте</option>
-								<option value="Наличными при получении">Наличными при получении</option>
-							</select>
-							<div class="order__promocode">
-								<div class="order__promocode-title">Промокод:</div>
-								<input type="text" class="form-input" placeholder="Promocode123">
-							</div>
-							<input type="submit" class="order__button" value="Оформить заказ">
-						</div>
-					</div>
-					<div class="order__demonstrate">
-
+					<div class="order-thanks__item">
+						<div class="order-thanks__subtitle">Возможен ли возврат?</div>
+						<p>Возврат возможен, если изделия не были персонализированы, в другом случае возврат невозможен. При необходимости напишите нам, с вами свяжется менеджер для уточнения всех инструкций.</p>
 					</div>
 				</div>
-			</form>
+			</div>
 		</div>
 	</div>
-</div>
 
 	<div class="container-fluid">
 		<div class="row">
