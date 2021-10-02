@@ -1,0 +1,24 @@
+<!--#set var="title" value="Сбросить пароль" -->
+<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/parts/breadcrumbs.html" -->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 offset-lg-1">
+			<div class="reset-password">
+				<form action="#" method="GET" class="reset-password__form">
+					<div class="order-title">Сбросить пароль</div>
+					<input class="form-input" type="email" id="reset-password__input" placeholder="email" required>
+					<p>Пожалуйста, укажите адрес электронной почты, который Вы использовали для создания Вашей учетной записи, и мы пришлем Вам ссылку для восстановления Вашего пароля.</p>
+					<button class="order-button" id="resetPassword">Сбросить пароль</button>
+				</form>
+				<div class="reset-password__check">
+					<div class="order-title">ПРОВЕРЬТЕ ВАШУ ЭЛЕКТРОННУЮ ПОЧТУ</div>
+					<p>Cсылка для сброса пароля, а также ваши регистрационные данные были высланы на email. Пожалуйста, дождитесь письма, так как ссылка для сброса пароля изменяется при каждом запросе.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

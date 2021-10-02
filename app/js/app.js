@@ -286,6 +286,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+	const resetPassword = () => {
+		const button = document.querySelector('#resetPassword')
+		const content = document.querySelector('.reset-password__check')
+		const form = document.querySelector('.reset-password__form')
+		const input = document.querySelector('#reset-password__input')
+		if(button) {
+			button.onclick = () => {
+				content.classList.add('show')
+				form.classList.add('hidden')
+			}
+		}
+	}
+
+	resetPassword()
 	showCategoryFooter()
 	showCategoryHeader()
 	showCategoryCatalog()
