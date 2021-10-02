@@ -46,14 +46,25 @@
 		display: flex
 		justify-content: space-between
 		margin-bottom: 16px
+		@include media-breakpoint-down(sm)
+			flex-wrap: wrap
 		input
 			width: 50%
 			margin-right: 16px
 			margin-bottom: 0
 			&:last-child
 				margin-right: 0
+			@include media-breakpoint-down(sm)
+				width: 100%
+				margin-right: 0
+				margin-bottom: 16px
 		&-inner
 			width: calc(50% - 8px)
+			@include media-breakpoint-down(sm)
+				width: 100%
+		&--mb0
+			@include media-breakpoint-down(sm)
+				margin-bottom: 0
 	&__personal
 		.order__title
 			margin-top: 0
