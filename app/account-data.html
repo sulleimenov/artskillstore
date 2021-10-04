@@ -1,0 +1,37 @@
+<!--#set var="title" value="Личный кабинет" -->
+<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/parts/breadcrumbs.html" -->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2">
+			<div class="account">
+				<div class="account__title">
+					<span>Личный кабинет</span>
+					<span class="account__title-open">Фильтр</span>
+					<span class="account__title-close">Закрыть</span>
+				</div>
+				<div class="account__nav">
+					<a href="#" class="account__nav-item">Мои заказы</a>
+					<a href="#" class="account__nav-item account__nav-item--active">Личные данные</a>
+					<a href="#" class="account__nav-item">Избранное</a>
+					<a href="#" class="account__nav-item">Выйти</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 offset-lg-2">
+			<div class="orders">
+				<div class="orders__title">Личные данные</div>
+				<form class="" action="#" method="GET">
+					<input class="form-input" type="text" placeholder="Саша">
+					<input class="form-input" type="text" placeholder="Невский">
+					<input class="form-input" type="text" placeholder="sasha_nevsky@mail.ru">
+					<input class="form-input" type="password" value="12345666">
+					<input class="form-button form-button--mt" type="button" value="сохранить">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
