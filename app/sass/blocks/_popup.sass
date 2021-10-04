@@ -46,6 +46,8 @@
 	left: 0
 	right: 0
 	width: 100%
+	&--cover
+		background-color: rgba($bg, 0.60)
 	&__wrapper
 		border: 1px solid $bg
 		border-top: none
@@ -231,3 +233,107 @@
 		background-image: url(../images/icons/quantity-minus.svg)
 	&--plus
 		background-image: url(../images/icons/quantity-plus.svg)
+
+.detailed
+	color: $textcolor
+	position: relative
+	background-color: $white
+	margin-top: 32px
+	height: 100%
+	width: 100%
+	padding-top: 48px
+	padding-bottom: 48px
+	@include media-breakpoint-down(md)
+		height: 100%
+	&__close
+		cursor: pointer
+		color: $accent
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: -16px
+		width: 16px
+		height: 100%
+		background-color: $white
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: -16px
+		background-color: $white
+		width: 16px
+		height: 100%
+	&__header
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid $textcolor
+		padding-bottom: 16px
+		margin-bottom: 32px
+	&__list-item
+		border-bottom: 1px solid $bg
+		padding-bottom: 32px
+	&__list-title
+		display: flex
+		justify-content: space-between
+		margin-bottom: 24px
+	&__list-box
+		display: flex
+		justify-content: space-between
+	&__list-image
+		width: 96px
+		height: 120px
+		margin-right: 24px
+	&__list-info
+	&__list-code
+		color: rgba($textcolor, 0.50)
+		text-transform: none
+		margin-bottom: 12px
+	&__list-color
+		margin-bottom: 12px
+		span
+			display: block
+			width: 32px
+			height: 12px
+			border-radius: 4px
+			margin-top: 8px
+	&__list-custom,
+	&__list-cover
+		margin-bottom: 12px
+		span
+			display: block
+		span:last-child
+			color: rgba($textcolor, 0.50)
+	&__delivery
+		margin-top: 16px
+		margin-bottom: 16px
+		border-bottom: 1px solid $bg
+		padding-bottom: 16px
+	&__delivery-price
+		display: flex
+		justify-content: space-between
+		margin-bottom: 16px
+		text-transform: none
+		&:last-child
+			margin-bottom: 0
+	&__total
+		display: flex
+		justify-content: space-between
+	&__order
+		margin-top: 32px
+	&__order-title
+		padding-bottom: 16px
+		border-bottom: 1px solid $textcolor
+		margin-bottom: 32px
+	&__order-list
+	&__order-item
+		margin-bottom: 24px
+		&:last-child
+			margin-bottom: 0
+		p
+			margin-bottom: 0
+	&__order-header
+		margin-bottom: 8px
+		&--mb
+			margin-bottom: 0
+

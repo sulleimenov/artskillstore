@@ -299,6 +299,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+	const accountMenu = () => {
+		const open = document.querySelector('.account__title-open')
+		const close = document.querySelector('.account__title-close')
+		const content = document.querySelector('.account__nav')
+		if(open) {
+			open.onclick = () => {
+				open.classList.add('hidden')
+				close.classList.add('d-flex')
+				content.classList.add('d-flex')
+			}
+			close.onclick = () => {
+				open.classList.remove('hidden')
+				close.classList.remove('d-flex')
+				content.classList.remove('d-flex')
+			}
+		}
+	}
+
 	resetPassword()
 	showCategoryFooter()
 	showCategoryHeader()
@@ -307,4 +325,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	CustomizationInput()
 	showOrder()
 	order()
+	accountMenu()
 })

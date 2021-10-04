@@ -1,0 +1,102 @@
+.account
+	&__title
+		display: flex
+		justify-content: space-between
+		margin-top: 32px
+		margin-bottom: 32px
+		color: $textcolor
+		@include media-breakpoint-down(md)
+			padding-bottom: 8px
+			margin-bottom: 0
+			border-bottom: 1px solid $bg
+		&-open
+			color: $accent
+			@include media-breakpoint-up(lg)
+				display: none
+		&-close
+			color: $accent
+			display: none
+	&__nav
+		display: flex
+		flex-direction: column
+		@include media-breakpoint-down(md)
+			display: none
+			margin-top: 32px
+	&__nav-item
+		padding: 8px 0
+		border-bottom: 1px solid rgba($accent, 0.50)
+		&--active
+			padding-left: 14px
+			position: relative
+			color: $textcolor
+			border-bottom: 1px solid $textcolor
+			&::before
+				content: '>'
+				position: absolute
+				left: 0
+		&--close
+			margin-top: 16px
+
+.orders
+	&__title
+		margin: 82px 0
+		font-size: 22px
+		@include media-breakpoint-down(md)
+			margin-top: 48px
+			margin-bottom: 57px
+	&__list
+		padding: 8px 0
+		border-top: 1px solid $bg
+		border-bottom: 1px solid $bg
+	&__item
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-bottom: 1px solid $bg
+		padding: 8px 0
+		&:first-child
+			padding-top: 0
+		&:last-child
+			padding-bottom: 0
+			border-bottom: none
+		@include media-breakpoint-down(xs)
+			justify-content: flex-start
+	&__item-image
+		img
+			height: 120px
+	&__item-info
+		@include media-breakpoint-down(xs)
+			display: flex
+			flex-direction: column
+			align-content: space-between
+		&-f
+			display: flex
+			text-transform: none
+			@include media-breakpoint-down(lg)
+				flex-direction: column
+			@include media-breakpoint-down(xs)
+				margin-left: 24px
+				margin-bottom: 24px
+	&__item-text
+		text-align: center
+		@include media-breakpoint-up(xxl)
+			margin-right: 60px
+		@include media-breakpoint-down(xl)
+			margin-right: 50px
+		@include media-breakpoint-down(lg)
+			margin-right: 0
+			text-align: left
+		&:last-child
+			margin-right: 0
+	&__item-detailed
+		color: $accent
+		cursor: pointer
+		@include media-breakpoint-down(xs)
+			display: none
+		&-xs
+			cursor: pointer
+			display: none
+			margin-left: 24px
+			color: $accent
+			@include media-breakpoint-down(xs)
+				display: block
