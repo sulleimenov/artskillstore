@@ -300,9 +300,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	const accountMenu = () => {
-		const open = document.querySelector('.account__title-open')
-		const close = document.querySelector('.account__title-close')
-		const content = document.querySelector('.account__nav')
+		const open = document.querySelector('.page__title-open')
+		const close = document.querySelector('.page__title-close')
+		const content = document.querySelector('.page__nav')
 		if(open) {
 			open.onclick = () => {
 				open.classList.add('hidden')
