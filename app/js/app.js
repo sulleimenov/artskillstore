@@ -1,6 +1,7 @@
 // Import jQuery module (npm i jquery)
 import $ from 'jquery'
 import Marquee from 'jquery.marquee'
+import Cookies from 'js-cookie'
 import MicroModal from 'micromodal'
 import {
 	Swiper,
@@ -43,9 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	const policyButton = () => {
 		const policyButton = document.querySelector('.cookie-policy__button')
 		const policyWrapper = document.querySelector('.cookie-policy-wrapper')
+		if (Cookies.get('policy')) {
+			policyWrapper.classList.add('hidden')
+		}
 		if (policyButton) {
 			policyButton.onclick = () => {
 				policyWrapper.classList.add('hidden')
+				Cookies.set('policy', 'permission', { expires: 7 })
 			}
 		}
 		
