@@ -23,6 +23,10 @@
 
 <body>
 
+	<div class="top-bunner">
+		<div class="top-bunner__text">Любая полезная информация</div>
+	</div>
+
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -210,12 +214,11 @@
 								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
 							</div>
 							<div class="modal-popup__content">
-								<a href="#" class="link">Оплата, доставка, возврат</a>
-								<a href="#" class="link">Где купить</a>
-								<a href="#" class="link">Контакты</a>
-								<a href="#" class="link">Блокноты и чехлы</a>
-								<a href="#" class="link">Сотрудничество</a>
-								<a href="#" class="link">Персонализация</a>
+								<a href="faq-payment.html" class="link">Оплата, доставка, возврат</a>
+								<a href="faq-by.html" class="link">Где купить</a>
+								<a href="faq-contacts.html" class="link">Контакты</a>
+								<a href="faq-cooperation.html" class="link">Сотрудничество</a>
+								<a href="faq-personalization.html" class="link">Персонализация</a>
 							</div>
 						</div>
 					</div>
@@ -288,14 +291,14 @@
 								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
 							</div>
 							<div class="modal-popup__content">
-								<a href="#" class="link">Мои заказы</a>
-								<a href="#" class="link">Личные данные</a>
-								<a href="#" class="link link--favourites">
+								<a href="account-orders.html" class="link">Мои заказы</a>
+								<a href="account-data.html" class="link">Личные данные</a>
+								<a href="account-favourites.html" class="link link--favourites">
 									<span>Избранное</span>
 									<span>0</span>
 								</a>
-								<a href="#" class="link">Войти</a>
-								<a href="#" class="link">Зарегистрироваться</a>
+								<a href="auth.html" class="link">Войти</a>
+								<a href="account-registration.html" class="link">Зарегистрироваться</a>
 								<a href="#" class="link link--close">Выйти</a>
 							</div>
 						</div>
@@ -625,6 +628,42 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="delivery_country" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container modal__container--center" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<div class="info-bunner">
+					<div class="info-bunner__close" data-micromodal-close>Закрыть</div>
+					<div class="info-bunner__images">
+						<img src="images/bunner.jpg" alt="image">
+					</div>
+					<div class="info-bunner__text">
+						<div class="info-bunner__text-header">We deliver to your country</div>
+						<p>Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились, помогая организовывать нашу жизнь, беречь время и внутренние ресурсы. Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились.</p>
+						<button class="info-bunner__button">More details</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="subscribe" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container modal__container--center" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<form action="#" method="GET" class="subscribe-bunner">
+					<div class="subscribe-bunner__close" data-micromodal-close>Закрыть</div>
+					<div class="subscribe-bunner__title">We deliver to your country</div>
+					<p>Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились, помогая организовывать нашу жизнь, беречь время и внутренние ресурсы. Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились.</p>
+					<input class="subscribe-bunner__input" type="email" name="sub_email" placeholder="Ваш email" required>
+					<button class="subscribe-bunner__button">Подписаться</button>
+					<div class="subscribe__checked">
+						<input type="checkbox" name="subscribe_checked" id="subscribe_checked" required checked>
+						<label for="subscribe_checked">Согласен с <a href="policy.html">политикой обработки персональных данных</a></label>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
