@@ -1,0 +1,47 @@
+<!--#set var="title" value="Сотрудничество" -->
+<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/parts/breadcrumbs.html" -->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2">
+			<div class="page">
+				<div class="page__title">
+					<span>Faq</span>
+					<span class="page__title-open">Фильтр</span>
+					<span class="page__title-close">Закрыть</span>
+				</div>
+				<div class="page__nav">
+					<a href="faq-payment.html" class="page__nav-item">Оплата, доставка, возврат</a>
+					<a href="faq-by.html" class="page__nav-item">Где купить</a>
+					<a href="faq-contacts.html" class="page__nav-item">Контакты</a>
+					<a href="faq-cooperation.html" class="page__nav-item page__nav-item--active">Сотрудничество</a>
+					<a href="faq-personalization.html" class="page__nav-item">Персонализация</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 offset-lg-2">
+			<div class="content">
+				<h1>Сотрудничество</h1>
+				<h2>Сотрудничаете ли вы с другим компаниями?</h2>
+				<p>Около десяти лет производим корпоративные заказы и сотрудничаем с другими брендами.</p>
+				<form action="#" method="GET" class="cooperation">
+					<div class="cooperation__header">
+						Оставьте заявку на наш email <span>artskillstore@gmail.com</span>, мы свяжемся с вами для уточнения всех деталей
+					</div>
+					<input class="form-input" type="text" name="name" placeholder="Имя сотрудника">
+					<input class="form-input" type="text" name="company_name" placeholder="Название компании">
+					<input class="form-input" type="text" name="email" placeholder="Email">
+					<input class="form-input" type="text" name="phone" placeholder="Телефон">
+					<input class="form-button cooperation__button" type="submit" value="отправить">
+					<div class="registration__checked">
+						<input type="checkbox" name="subscribe_policy" id="subscribe_policy" required checked>
+						<label for="subscribe_policy">Согласен с <a href="#">политикой обработки персональных данных</a></label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
