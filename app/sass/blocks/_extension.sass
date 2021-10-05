@@ -74,8 +74,11 @@
 	padding: 11px 16px
 	background-color: $bg
 	margin-bottom: 8px
-	border: none!important
+	border: 1px solid transparent!important
 	font-weight: 300
+	&:focus
+		border: 1px solid $textcolor!important
+		color: $textcolor
 
 .form-button
 	background-color: $accent
