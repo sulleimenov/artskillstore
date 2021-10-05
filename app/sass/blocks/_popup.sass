@@ -27,7 +27,6 @@
 		padding: 72px 16px
 		&--center
 			max-width: 100%!important
-			width: 936px
 			position: relative
 			background-color: $bg
 			padding: 0
@@ -221,6 +220,8 @@
 		padding-left: 15px
 		@include media-breakpoint-down(md)
 			margin-bottom: 12px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 0
 	&__item-delete
 		cursor: pointer
 	&__total
