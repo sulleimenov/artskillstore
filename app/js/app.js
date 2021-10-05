@@ -34,6 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	})
 
+	const autoOpenModal = () => {
+		setTimeout(() => {
+			MicroModal.show('delivery_country')
+		}, 7000);
+	}
+
+	const policyButton = () => {
+		const policyButton = document.querySelector('.cookie-policy__button')
+		const policyWrapper = document.querySelector('.cookie-policy-wrapper')
+		if (policyButton) {
+			policyButton.onclick = () => {
+				policyWrapper.classList.add('hidden')
+			}
+		}
+		
+	}
+
 	const HomeBunner = new Swiper('.home-slider', {
 		loop: false,
 		preloadImages: false,
@@ -326,4 +343,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	showOrder()
 	order()
 	accountMenu()
+	autoOpenModal()
+	policyButton()
 })

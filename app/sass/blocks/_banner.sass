@@ -8,3 +8,55 @@
 	margin-bottom: 32px
 	a
 		color: $white
+
+.cookie-policy-wrapper
+	display: flex
+	align-items: center
+	justify-content: center
+	position: fixed
+	bottom: 0
+	width: 100%
+	height: 48px
+	background-color: $bg
+	z-index: 999
+	@include media-breakpoint-down(xs)
+		padding: 10px 10px
+		height: auto
+
+.cookie-policy
+	display: flex
+	justify-content: center
+	align-items: center
+	&__text
+		text-transform: none
+		margin-right: 16px
+	&__button
+		width: 222px
+
+.info-bunner
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&__close
+		position: absolute
+		top: 24px
+		right: 32px
+		color: $accent
+		cursor: pointer
+	&__images
+		width: 300px
+		height: 375px
+		@include media-breakpoint-down(sm)
+			display: none
+		img
+			max-width: none
+	&__text
+		padding: 72px
+		@include media-breakpoint-down(xs)
+			padding: 48px 32px
+	&__text-header
+		font-size: 22px
+		margin-bottom: 16px
+	&__button
+		margin-top: 8px
+		width: 222px
