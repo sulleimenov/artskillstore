@@ -60,22 +60,16 @@
 					<div class="d-flex justify-content-between">
 						<div data-micromodal-open="menu" class="nav-item d-flex d-lg-none">Меню</div>
 						<div data-micromodal-open="currency" class="nav-item d-none d-lg-flex">$</div>
-						<div data-micromodal-open="basket" class="nav-item">Корзина 00</div>
+						<div data-micromodal-open="basket" class="nav-item scroll">Корзина 00</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 <div class="breadcrumbs">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-8">
-				<div class="breadcrumb-list">
-					<a class="breadcrumb-list__item" href="https://sulleimenov.github.io/artskillstore">Главная</a>
-					<a class="breadcrumb-list__item" href="#">Страница продукта</a>
-				</div>
-			</div>
-		</div>
+	<div class="breadcrumb-list">
+		<a class="breadcrumb-list__item" href="https://sulleimenov.github.io/artskillstore">Главная</a>
+		<a class="breadcrumb-list__item" href="#">Страница продукта</a>
 	</div>
 </div>
 
@@ -168,7 +162,7 @@
 								<input name="initials" type="text" placeholder="А.А.">
 							</div>
 							<div class="product__customization-tab d-none" id="quote_input">
-								<select name="quote">
+								<select class="js-select" name="quote">
 									<option value="Love calls you by your name">Love calls you by your name</option>
 									<option value="Love calls you by your name">Love calls you by your name</option>
 									<option value="Love calls you by your name">Love calls you by your name</option>
@@ -181,17 +175,17 @@
 								<div class="product__customization-title">Покрытие:</div>
 							</div>
 							<div class="product__customization-select">
-								<select name="coverage">
+								<select class="js-select" name="coverage">
 									<option value="silver">Серебро</option>
 								</select>
 							</div>
 						</div>
 						<button>Добавить в корзину</button>
 						<div class="product__buttons">
-							<div data-micromodal-open="delivery" class="button button--hover">Доставка и оплата</div>
+							<div data-micromodal-open="delivery" class="button button--hover scroll">Доставка и оплата</div>
 						</div>
 						<div class="product__buttons">
-							<div data-micromodal-open="description" class="button button--hover">Описание и состав</div>
+							<div data-micromodal-open="description" class="button button--hover scroll">Описание и состав</div>
 						</div>
 					</form>
 				</div>
@@ -214,7 +208,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-2 col-md-4 col-sm-4 col-4">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-4">
 					<div class="recommended__item">
 						<div class="recommended__image">
 							<img src="images/recomended/Фото-1.jpg" alt="image">
@@ -239,7 +233,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-4 col-sm-4 col-4">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-4">
 					<div class="recommended__item">
 						<div class="recommended__image">
 							<img src="images/recomended/Фото-2.jpg" alt="image">
@@ -264,7 +258,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-4 col-sm-4 col-4">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-4">
 					<div class="recommended__item">
 						<div class="recommended__image">
 							<img src="images/recomended/Фото-3.jpg" alt="image">
@@ -289,7 +283,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-4 col-sm-4 col-4">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-4">
 					<div class="recommended__item">
 						<div class="recommended__image">
 							<img src="images/recomended/Фото.jpg" alt="image">
@@ -318,12 +312,13 @@
 		</div>
 	</div>
 
+	<div class="banner">
+		<a href="#">Любая полезная информация</a>
+	</div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-8">
-				<div class="banner">
-					<a href="#">Любая полезная информация</a>
-				</div>
+				<div class="line line--mb line--mdn"></div>
 			</div>
 		</div>
 	</div>
@@ -476,9 +471,9 @@
 										<a href="faq-contacts.html">Контакты</a>
 									</div>
 									<div class="mobile-menu__box">
-										<a href="#">Поиск</a>
-										<a href="#">En</a>
-										<a href="#">$</a>
+										<div data-micromodal-open="search">Поиск</div>
+										<div data-micromodal-open="language_mobile">En</div>
+										<div data-micromodal-open="currency_mobile">$</div>
 									</div>
 									<div class="mobile-menu__box">
 										<a href="#">Instagram</a>
@@ -643,6 +638,27 @@
 		</div>
 	</div>
 
+	<div class="modal micromodal-slide" id="language_mobile" aria-hidden="true">
+		<div class="modal-popup modal-popup--cover modal-popup--cover-m" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-6">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Язык</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">En</a>
+								<a class="link" href="#">Рус</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="modal micromodal-slide" id="currency" aria-hidden="true">
 		<div class="modal-popup" tabindex="-1" data-micromodal-close>
 			<div class="container-fluid">
@@ -664,9 +680,31 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal micromodal-slide" id="currency_mobile" aria-hidden="true">
+		<div class="modal-popup modal-popup--cover modal-popup--cover-m" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-7">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Валюта</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">$</a>
+								<a class="link" href="#">€</a>
+								<a class="link" href="#">Руб</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<div class="modal micromodal-slide" id="basket" aria-hidden="true">
-		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+		<div class="modal-popup modal-popup--cover" tabindex="-1" data-micromodal-close>
 			<div class="container-fluid">
 				<div class="row" data-micromodal-close>
 					<div class="col-lg-2 offset-lg-6">
@@ -849,24 +887,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal micromodal-slide" id="delivery_country" aria-hidden="true">
-		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-			<div class="modal__container modal__container--center" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-				<div class="info-bunner">
-					<div class="info-bunner__close" data-micromodal-close>Закрыть</div>
-					<div class="info-bunner__images">
-						<img src="images/bunner.jpg" alt="image">
-					</div>
-					<div class="info-bunner__text">
-						<div class="info-bunner__text-header">We deliver to your country</div>
-						<p>Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились, помогая организовывать нашу жизнь, беречь время и внутренние ресурсы. Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились.</p>
-						<button class="info-bunner__button">More details</button>
 					</div>
 				</div>
 			</div>

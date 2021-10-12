@@ -146,9 +146,9 @@
 										<a href="faq-contacts.html">Контакты</a>
 									</div>
 									<div class="mobile-menu__box">
-										<a href="#">Поиск</a>
-										<a href="#">En</a>
-										<a href="#">$</a>
+										<div data-micromodal-open="search">Поиск</div>
+										<div data-micromodal-open="language_mobile">En</div>
+										<div data-micromodal-open="currency_mobile">$</div>
 									</div>
 									<div class="mobile-menu__box">
 										<a href="#">Instagram</a>
@@ -313,6 +313,27 @@
 		</div>
 	</div>
 
+	<div class="modal micromodal-slide" id="language_mobile" aria-hidden="true">
+		<div class="modal-popup modal-popup--cover modal-popup--cover-m" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-6">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Язык</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">En</a>
+								<a class="link" href="#">Рус</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="modal micromodal-slide" id="currency" aria-hidden="true">
 		<div class="modal-popup" tabindex="-1" data-micromodal-close>
 			<div class="container-fluid">
@@ -334,9 +355,31 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal micromodal-slide" id="currency_mobile" aria-hidden="true">
+		<div class="modal-popup modal-popup--cover modal-popup--cover-m" tabindex="-1" data-micromodal-close>
+			<div class="container-fluid">
+				<div class="row" data-micromodal-close>
+					<div class="col-lg-1 offset-lg-7">
+						<div class="modal-popup__wrapper">
+							<div class="modal-popup__header">
+								<span class="modal-popup__title">Валюта</span>
+								<span class="modal-popup__close" data-micromodal-close>Закрыть</span>
+							</div>
+							<div class="modal-popup__content">
+								<a class="link current" href="#">$</a>
+								<a class="link" href="#">€</a>
+								<a class="link" href="#">Руб</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<div class="modal micromodal-slide" id="basket" aria-hidden="true">
-		<div class="modal-popup" tabindex="-1" data-micromodal-close>
+		<div class="modal-popup modal-popup--cover" tabindex="-1" data-micromodal-close>
 			<div class="container-fluid">
 				<div class="row" data-micromodal-close>
 					<div class="col-lg-2 offset-lg-6">
@@ -519,24 +562,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal micromodal-slide" id="delivery_country" aria-hidden="true">
-		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-			<div class="modal__container modal__container--center" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-				<div class="info-bunner">
-					<div class="info-bunner__close" data-micromodal-close>Закрыть</div>
-					<div class="info-bunner__images">
-						<img src="images/bunner.jpg" alt="image">
-					</div>
-					<div class="info-bunner__text">
-						<div class="info-bunner__text-header">We deliver to your country</div>
-						<p>Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились, помогая организовывать нашу жизнь, беречь время и внутренние ресурсы. Мы хотим, чтобы по-настоящему дорогие предметы надежно и бережно хранились.</p>
-						<button class="info-bunner__button">More details</button>
 					</div>
 				</div>
 			</div>
