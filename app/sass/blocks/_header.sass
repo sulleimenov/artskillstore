@@ -2,7 +2,7 @@
 	display: flex
 	align-items: center
 	position: relative
-	z-index: 99999
+	// z-index: 99999
 
 .nav-item
 	display: inline-flex
@@ -10,6 +10,8 @@
 	height: 32px
 	color: $textcolor
 	cursor: pointer
+	&:hover
+		border-bottom: 1px solid $accent
 	&--logo
 		padding-top: 2px
 		&:hover
@@ -39,7 +41,9 @@
 		border-bottom: 1px solid $bg
 		&:last-child
 			border-bottom: none
-		a
+		a,
+		div
+			color: $accent
 			margin-bottom: 8px
 			&:last-child
 				margin-bottom: 0

@@ -22,8 +22,12 @@
 				padding-right: 16px
 	&__image
 		margin-bottom: 16px
+		@include media-breakpoint-down(md)
+			height: 275px
+		@include media-breakpoint-down(sm)
+			height: 400px
 		@include media-breakpoint-down(xs)
-			height: 178px
+			height: 260px
 		img
 			object-fit: cover
 			height: 100%

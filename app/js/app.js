@@ -2,6 +2,7 @@
 import $ from 'jquery'
 import Marquee from 'jquery.marquee'
 import Cookies from 'js-cookie'
+import Select2 from 'select2'
 import MicroModal from 'micromodal'
 import {
 	Swiper,
@@ -32,8 +33,30 @@ document.addEventListener('DOMContentLoaded', () => {
 		onClose: function (modal, element, event) {
 			event.preventDefault()
 			event.stopPropagation()
-		},
+			document.body.classList.remove('overflow')
+		}
 	})
+
+	$('.js-select').select2({
+		minimumResultsForSearch: -1,
+	});
+
+	const scrollModal = () => {
+		const button = document.querySelector('.scroll')
+		const detailed = document.querySelector('.scroll-detailed')
+		if (button) {
+			button.addEventListener('click', () => {
+				document.body.classList.add('overflow')
+			})
+		}
+		// if (detailed) {
+		// 	detailed.addEventListener('click', () => {
+		// 		document.body.classList.add('overflow')
+		// 	})
+		// }
+	}
+
+	scrollModal()
 
 	const autoOpenModal = () => {
 		setTimeout(() => {
@@ -127,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	$('.home-catalog__marquee').marquee({
-		duration: 18000,
+		duration: 36000,
 		startVisible: true,
 		duplicated: true,
 	})
