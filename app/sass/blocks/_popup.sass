@@ -56,7 +56,7 @@
 	right: 0
 	width: 100%
 	&--cover
-		background-color: rgba($bg, 0.60)
+		background-color: rgba($bg, 0.80)
 	&--cover-m
 		height: 250vh
 	&__wrapper
@@ -144,7 +144,8 @@
 		width: 16px
 		height: 100%
 		@include media-breakpoint-down(sm)
-			display: none
+			width: 9px
+			right: -9px
 	&::after
 		content: ''
 		position: absolute
@@ -154,7 +155,8 @@
 		width: 16px
 		height: 100%
 		@include media-breakpoint-down(sm)
-			display: none
+			width: 9px
+			left: -9px
 	&__header
 		display: flex
 		justify-content: space-between
@@ -384,3 +386,5 @@
 		&--mb
 			margin-bottom: 0
 
+#delivery_country
+	z-index: 999999

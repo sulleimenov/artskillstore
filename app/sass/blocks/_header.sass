@@ -10,10 +10,27 @@
 	height: 32px
 	color: $textcolor
 	cursor: pointer
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		right: 0
+		bottom: 7px
+		background-color: $accent
+		height: 1px
+		display: block
+		width: 0%
+		transition: width .2s ease-in-out
+	&:hover::after
+		width: 100%
+		right: auto
+		left: 0
 	&:hover
-		border-bottom: 1px solid $accent
+		border-bottom: none
 	&--logo
 		padding-top: 2px
+		&::after
+			background-color: transparent
 		&:hover
 			border-bottom: none
 

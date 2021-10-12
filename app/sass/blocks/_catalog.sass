@@ -89,6 +89,8 @@
 .card
 	display: block
 	border: 1px solid $white
+	&::after
+		background-color: transparent
 	&:hover
 		border: 1px solid $accent
 		.card__color-list
@@ -110,6 +112,8 @@
 		position: absolute
 		top: 16px
 		left: 8px
+		@include media-breakpoint-down(md)
+			visibility: visible
 	&__price
 		margin-bottom: 8px
 	&__color-list

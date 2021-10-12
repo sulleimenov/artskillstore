@@ -6,7 +6,7 @@
 	cursor: pointer
 	&:hover
 		color: $textcolor
-		border-bottom: 1px solid $textcolor
+		border-bottom: 1px solid transparent
 	&--hover
 		border-bottom: 1px solid transparent
 		padding-bottom: 2px
@@ -50,6 +50,9 @@
 		margin-top: 32px
 	&.line--mb72
 		margin-bottom: 72px
+	&.line--mdn
+		@include media-breakpoint-down(xs)
+			display: none
 
 .section
 	padding-top: 72px
@@ -98,3 +101,6 @@
 .overflow
 	overflow: hidden
 	padding-right: 17px
+	@include media-breakpoint-down(md)
+		overflow: scroll
+		padding-right: 0

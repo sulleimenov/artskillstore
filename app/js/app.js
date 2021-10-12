@@ -44,16 +44,22 @@ document.addEventListener('DOMContentLoaded', () => {
 	const scrollModal = () => {
 		const button = document.querySelector('.scroll')
 		const detailed = document.querySelector('.scroll-detailed')
+		const desc = document.querySelector('.scroll-descr')
 		if (button) {
 			button.addEventListener('click', () => {
 				document.body.classList.add('overflow')
 			})
 		}
-		// if (detailed) {
-		// 	detailed.addEventListener('click', () => {
-		// 		document.body.classList.add('overflow')
-		// 	})
-		// }
+		if (detailed) {
+			detailed.addEventListener('click', () => {
+				document.body.classList.add('overflow')
+			})
+		}
+		if (desc) {
+			desc.addEventListener('click', () => {
+				document.body.classList.add('overflow')
+			})
+		}
 	}
 
 	scrollModal()
